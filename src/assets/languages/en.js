@@ -149,6 +149,7 @@ module.exports =  {
     associate:'Do you want to associate custom code table',
     Associateservice: 'Associate selected service',
     Associated:'Service selection',
+    whetherShowInput:'Whether or not shown'
   },
   CodeTypeDialog:{
     GenerationType:'Generation Type',

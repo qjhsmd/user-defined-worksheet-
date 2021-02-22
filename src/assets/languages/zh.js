@@ -148,6 +148,7 @@ module.exports =  {
     associate:'是否关联自定义码表',
     Associateservice:'是否关联已选择服务',
     Associated:'服务选择',
+    whetherShowInput:'是否显示'
   },
   FormDrawer:{
     ResourceReference:'资源引用',

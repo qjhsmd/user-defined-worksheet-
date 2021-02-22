@@ -20,7 +20,7 @@ const layouts = {
     if (config.showLabel === false) labelWidth = '0'
     return (
       <el-col span={config.span}>
-        <el-form-item label-width={labelWidth} prop={scheme.__vModel__}
+        <el-form-item label-width={labelWidth} prop={scheme.__vModel__} v-show={config.showInput== undefined || config.showInput == true}
           label={config.showLabel ? config.label : ''}>
           <render conf={scheme} {...{ on: listeners }} />
         </el-form-item>

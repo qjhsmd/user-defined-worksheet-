@@ -116,6 +116,13 @@ module.exports = {
 
 /***/ }),
 
+/***/ "02c8":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "0366":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16524,17 +16531,6 @@ module.exports = function isCancel(value) {
 
 /***/ }),
 
-/***/ "2ed4":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RightPanel_vue_vue_type_style_index_1_id_04fe54dc_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cf58");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RightPanel_vue_vue_type_style_index_1_id_04fe54dc_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RightPanel_vue_vue_type_style_index_1_id_04fe54dc_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RightPanel_vue_vue_type_style_index_1_id_04fe54dc_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
 /***/ "2f9a":
 /***/ (function(module, exports) {
 
@@ -23103,7 +23099,7 @@ module.exports = __webpack_require__("7f4d");
 /* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var core_js_modules_web_dom_collections_iterator__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("ddb0");
 /* harmony import */ var core_js_modules_web_dom_collections_iterator__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var E_new_vue_form_design_node_modules_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("5530");
+/* harmony import */ var C_Users_qjh88_Desktop_pag_vue_form_design_node_modules_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("5530");
 
 
 
@@ -23175,6 +23171,7 @@ keys.forEach(function (key) {
       style: {},
       nativeOn: {}
     };
+    console.log(this.conf);
     var confClone = JSON.parse(JSON.stringify(this.conf));
     var children = [];
     var childObjs = componentChild[confClone.__config__.tag];
@@ -23213,7 +23210,7 @@ keys.forEach(function (key) {
         if (key === '__vModel__') {
           vModel(_this, dataObject, confClone.__config__.defaultValue);
         } else if (dataObject[key]) {
-          dataObject[key] = Object(E_new_vue_form_design_node_modules_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(Object(E_new_vue_form_design_node_modules_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])({}, dataObject[key]), val);
+          dataObject[key] = Object(C_Users_qjh88_Desktop_pag_vue_form_design_node_modules_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(Object(C_Users_qjh88_Desktop_pag_vue_form_design_node_modules_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])({}, dataObject[key]), val);
         } else {
           dataObject.attrs[key] = val;
         }
@@ -84151,13 +84148,6 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA9CAYAAAAd
 
 /***/ }),
 
-/***/ "cf58":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
 /***/ "cfcd":
 /***/ (function(module) {
 
@@ -85536,6 +85526,17 @@ var validateRangeInOneMonth = exports.validateRangeInOneMonth = function validat
 /* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IconsDialog_vue_vue_type_style_index_0_id_6ad22ae2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IconsDialog_vue_vue_type_style_index_0_id_6ad22ae2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
 /* unused harmony reexport * */
  /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_IconsDialog_vue_vue_type_style_index_0_id_6ad22ae2_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "da70":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RightPanel_vue_vue_type_style_index_1_id_2aeb0a14_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("02c8");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RightPanel_vue_vue_type_style_index_1_id_2aeb0a14_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RightPanel_vue_vue_type_style_index_1_id_2aeb0a14_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_3_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_RightPanel_vue_vue_type_style_index_1_id_2aeb0a14_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -88988,7 +88989,7 @@ var result = svg_sprite_loader_runtime_browser_sprite_build__WEBPACK_IMPORTED_MO
 /* harmony import */ var core_js_modules_es_string_split__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_split__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("159b");
 /* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var E_new_vue_form_design_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("53ca");
+/* harmony import */ var C_Users_qjh88_Desktop_pag_vue_form_design_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("53ca");
 
 
 
@@ -89114,7 +89115,7 @@ function jsonClone(obj) {
 function deepClone(obj) {
   var _toString = Object.prototype.toString; // null, undefined, non-object, function
 
-  if (!obj || Object(E_new_vue_form_design_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(obj) !== 'object') {
+  if (!obj || Object(C_Users_qjh88_Desktop_pag_vue_form_design_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(obj) !== 'object') {
     return obj;
   } // DOM Node
 
@@ -91469,10 +91470,10 @@ function buildexport(conf, type, data, rules, selectOptions, uploadVar, props, m
 /* harmony import */ var core_js_modules_es_string_split__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_split__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("159b");
 /* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var E_new_vue_form_design_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("ade3");
+/* harmony import */ var C_Users_qjh88_Desktop_pag_vue_form_design_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("ade3");
 /* harmony import */ var _vue_babel_helper_vue_jsx_merge_props__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("2638");
 /* harmony import */ var _vue_babel_helper_vue_jsx_merge_props__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_vue_babel_helper_vue_jsx_merge_props__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var E_new_vue_form_design_node_modules_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("5530");
+/* harmony import */ var C_Users_qjh88_Desktop_pag_vue_form_design_node_modules_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("5530");
 /* harmony import */ var _utils_index__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("ed08");
 /* harmony import */ var _components_render_render_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("4758");
 
@@ -91517,7 +91518,7 @@ var layouts = {
       "attrs": {
         "conf": scheme
       },
-      "on": Object(E_new_vue_form_design_node_modules_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])({}, listeners)
+      "on": Object(C_Users_qjh88_Desktop_pag_vue_form_design_node_modules_babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])({}, listeners)
     })])]);
   },
   rowFormItem: function rowFormItem(h, scheme) {
@@ -91669,7 +91670,7 @@ function buildListeners(scheme) {
 
     var data = (_data = {
       formConfCopy: Object(_utils_index__WEBPACK_IMPORTED_MODULE_9__[/* deepClone */ "b"])(this.formConf)
-    }, Object(E_new_vue_form_design_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(_data, this.formConf.formModel, {}), Object(E_new_vue_form_design_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(_data, this.formConf.formRules, {}), _data);
+    }, Object(C_Users_qjh88_Desktop_pag_vue_form_design_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(_data, this.formConf.formModel, {}), Object(C_Users_qjh88_Desktop_pag_vue_form_design_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(_data, this.formConf.formRules, {}), _data);
     this.initFormData(data.formConfCopy.fields, data[this.formConf.formModel]);
     this.buildRules(data.formConfCopy.fields, data[this.formConf.formRules]);
     return data;
@@ -92103,12 +92104,12 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var Parser = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2ec1dd6a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/Home.vue?vue&type=template&id=4c0a163a&
-var Homevue_type_template_id_4c0a163a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container"},[_c('div',{staticClass:"left-board"},[_c('div',{staticClass:"logo-wrapper"}),_c('el-scrollbar',{staticClass:"left-scrollbar"},[_c('div',{staticClass:"components-list"},_vm._l((_vm.leftComponents),function(item,listIndex){return _c('div',{key:listIndex},[_c('div',{staticClass:"components-title"},[_c('svg-icon',{attrs:{"icon-class":"component"}}),_vm._v(" "+_vm._s(_vm.$t(item.title))+" ")],1),_c('draggable',{staticClass:"components-draggable",attrs:{"list":item.list,"group":{ name: 'componentsGroup', pull: 'clone', put: false },"clone":_vm.cloneComponent,"draggable":".components-item","sort":false},on:{"end":_vm.onEnd}},_vm._l((item.list),function(element,index){return _c('div',{key:index,staticClass:"components-item",on:{"click":function($event){return _vm.addComponent(element)}}},[_c('div',{staticClass:"components-body"},[(element.__config__.tagIcon == 'Customcodetable')?_c('svg-icon',{attrs:{"icon-class":"user"}}):_c('svg-icon',{attrs:{"icon-class":element.__config__.tagIcon}}),_vm._v(" "+_vm._s(element.__config__.label)+" ")],1)])}),0)],1)}),0)])],1),_c('div',{staticClass:"center-board"},[_c('div',{staticClass:"action-bar"},[_vm._t("submit")],2),_c('el-scrollbar',{staticClass:"center-scrollbar"},[(_vm.showTime)?_c('el-row',{staticClass:"center-board-row",attrs:{"gutter":_vm.formConf.gutter}},[_c('el-form',{attrs:{"size":_vm.formConf.size,"label-position":_vm.formConf.labelPosition,"disabled":_vm.formConf.disabled,"label-width":_vm.formConf.labelWidth + 'px'}},[_c('draggable',{staticClass:"drawing-board",attrs:{"list":_vm.drawingList,"animation":340,"group":"componentsGroup"}},_vm._l((_vm.drawingList),function(element,index){return _c('draggable-item',{key:element.renderKey,attrs:{"drawing-list":_vm.drawingList,"element":element,"index":index,"active-id":_vm.activeId,"form-conf":_vm.formConf},on:{"activeItem":_vm.activeFormItem,"copyItem":_vm.drawingItemCopy,"deleteItem":_vm.drawingItemDelete}})}),1),_c('div',{directives:[{name:"show",rawName:"v-show",value:(!_vm.drawingList.length),expression:"!drawingList.length"}],staticClass:"empty-info"},[_vm._v(" "+_vm._s(_vm.$t('home.designtip'))+" ")])],1)],1):_vm._e()],1)],1),(_vm.rightPanel)?_c('div',[_c('right-panel',{ref:"myRight",attrs:{"active-data":_vm.activeData,"form-conf":_vm.formConf,"drawingList":_vm.drawingList,"show-field":!!_vm.drawingList.length,"formData":_vm.formData,"codeDataOptions":_vm.codeDataOptions,"codeModelOptions":_vm.codeModelOptions,"codeNameOptions":_vm.codeNameOptions,"options":_vm.fieldName,"clickName":_vm.clickName,"codeList":_vm.codeList,"detailFields":_vm.detailFields,"onlyDetail":_vm.onlyDetail},on:{"tag-change":_vm.tagChange,"AssembleFormData":_vm.AssembleFormData,"changeField":_vm.changeField}})],1):_vm._e(),_c('form-drawer',{attrs:{"visible":_vm.drawerVisible,"form-data":_vm.formData,"size":"100%","generate-conf":_vm.generateConf},on:{"update:visible":function($event){_vm.drawerVisible=$event}}}),_c('json-drawer',{attrs:{"size":"60%","visible":_vm.jsonDrawerVisible,"json-str":JSON.stringify(_vm.formData)},on:{"update:visible":function($event){_vm.jsonDrawerVisible=$event},"refresh":_vm.refreshJson}}),_c('code-type-dialog',{attrs:{"visible":_vm.dialogVisible,"title":_vm.$t('home.selectType'),"show-file-name":_vm.showFileName},on:{"update:visible":function($event){_vm.dialogVisible=$event},"confirm":_vm.generate}}),_c('input',{attrs:{"id":"copyNode","type":"hidden"}})],1)}
-var Homevue_type_template_id_4c0a163a_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"538f9eba-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/Home.vue?vue&type=template&id=040129ed&
+var Homevue_type_template_id_040129ed_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container"},[_c('div',{staticClass:"left-board"},[_c('div',{staticClass:"logo-wrapper"}),_c('el-scrollbar',{staticClass:"left-scrollbar"},[_c('div',{staticClass:"components-list"},_vm._l((_vm.leftComponents),function(item,listIndex){return _c('div',{key:listIndex},[_c('div',{staticClass:"components-title"},[_c('svg-icon',{attrs:{"icon-class":"component"}}),_vm._v(" "+_vm._s(_vm.$t(item.title))+" ")],1),_c('draggable',{staticClass:"components-draggable",attrs:{"list":item.list,"group":{ name: 'componentsGroup', pull: 'clone', put: false },"clone":_vm.cloneComponent,"draggable":".components-item","sort":false},on:{"end":_vm.onEnd}},_vm._l((item.list),function(element,index){return _c('div',{key:index,staticClass:"components-item",on:{"click":function($event){return _vm.addComponent(element)}}},[_c('div',{staticClass:"components-body"},[(element.__config__.tagIcon == 'Customcodetable')?_c('svg-icon',{attrs:{"icon-class":"user"}}):_c('svg-icon',{attrs:{"icon-class":element.__config__.tagIcon}}),_vm._v(" "+_vm._s(element.__config__.label)+" ")],1)])}),0)],1)}),0)])],1),_c('div',{staticClass:"center-board"},[_c('div',{staticClass:"action-bar"},[_c('el-button',{attrs:{"icon":"el-icon-view","type":"text"},on:{"click":_vm.showJson}},[_vm._v(" 查看json ")]),_vm._t("submit")],2),_c('el-scrollbar',{staticClass:"center-scrollbar"},[(_vm.showTime)?_c('el-row',{staticClass:"center-board-row",attrs:{"gutter":_vm.formConf.gutter}},[_c('el-form',{attrs:{"size":_vm.formConf.size,"label-position":_vm.formConf.labelPosition,"disabled":_vm.formConf.disabled,"label-width":_vm.formConf.labelWidth + 'px'}},[_c('draggable',{staticClass:"drawing-board",attrs:{"list":_vm.drawingList,"animation":340,"group":"componentsGroup"}},_vm._l((_vm.drawingList),function(element,index){return _c('draggable-item',{key:element.renderKey,attrs:{"drawing-list":_vm.drawingList,"element":element,"index":index,"active-id":_vm.activeId,"form-conf":_vm.formConf},on:{"activeItem":_vm.activeFormItem,"copyItem":_vm.drawingItemCopy,"deleteItem":_vm.drawingItemDelete}})}),1),_c('div',{directives:[{name:"show",rawName:"v-show",value:(!_vm.drawingList.length),expression:"!drawingList.length"}],staticClass:"empty-info"},[_vm._v(" "+_vm._s(_vm.$t("home.designtip"))+" ")])],1)],1):_vm._e()],1)],1),(_vm.rightPanel)?_c('div',[_c('right-panel',{ref:"myRight",attrs:{"active-data":_vm.activeData,"form-conf":_vm.formConf,"drawingList":_vm.drawingList,"show-field":!!_vm.drawingList.length,"formData":_vm.formData,"codeDataOptions":_vm.codeDataOptions,"codeModelOptions":_vm.codeModelOptions,"codeNameOptions":_vm.codeNameOptions,"options":_vm.fieldName,"clickName":_vm.clickName,"codeList":_vm.codeList,"detailFields":_vm.detailFields,"onlyDetail":_vm.onlyDetail},on:{"tag-change":_vm.tagChange,"AssembleFormData":_vm.AssembleFormData,"changeField":_vm.changeField}})],1):_vm._e(),_c('form-drawer',{attrs:{"visible":_vm.drawerVisible,"form-data":_vm.formData,"size":"100%","generate-conf":_vm.generateConf},on:{"update:visible":function($event){_vm.drawerVisible=$event}}}),_c('json-drawer',{attrs:{"size":"60%","visible":_vm.jsonDrawerVisible,"json-str":JSON.stringify(_vm.formData)},on:{"update:visible":function($event){_vm.jsonDrawerVisible=$event},"refresh":_vm.refreshJson}}),_c('code-type-dialog',{attrs:{"visible":_vm.dialogVisible,"title":_vm.$t('home.selectType'),"show-file-name":_vm.showFileName},on:{"update:visible":function($event){_vm.dialogVisible=$event},"confirm":_vm.generate}}),_c('input',{attrs:{"id":"copyNode","type":"hidden"}})],1)}
+var Homevue_type_template_id_040129ed_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/views/index/Home.vue?vue&type=template&id=4c0a163a&
+// CONCATENATED MODULE: ./src/views/index/Home.vue?vue&type=template&id=040129ed&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.filter.js
 var es_array_filter = __webpack_require__("4de4");
@@ -92147,7 +92148,7 @@ var web_dom_collections_iterator = __webpack_require__("ddb0");
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 var external_commonjs_vue_commonjs2_vue_root_Vue_default = /*#__PURE__*/__webpack_require__.n(external_commonjs_vue_commonjs2_vue_root_Vue_);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2ec1dd6a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/SvgIcon/index.vue?vue&type=template&id=0fcaa402&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"538f9eba-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/SvgIcon/index.vue?vue&type=template&id=0fcaa402&scoped=true&
 var SvgIconvue_type_template_id_0fcaa402_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.isExternal)?_c('div',_vm._g({staticClass:"svg-external-icon svg-icon",style:(_vm.styleExternalIcon)},_vm.$listeners)):_c('svg',_vm._g({class:_vm.svgClass,attrs:{"aria-hidden":"true"}},_vm.$listeners),[_c('use',{attrs:{"xlink:href":_vm.iconName}})])}
 var SvgIconvue_type_template_id_0fcaa402_scoped_true_staticRenderFns = []
 
@@ -92410,7 +92411,7 @@ var clipboard_default = /*#__PURE__*/__webpack_require__.n(dist_clipboard);
 // EXTERNAL MODULE: ./src/components/render/render.js
 var render_render = __webpack_require__("4758");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2ec1dd6a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/FormDrawer.vue?vue&type=template&id=e77538fc&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"538f9eba-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/FormDrawer.vue?vue&type=template&id=e77538fc&scoped=true&
 var FormDrawervue_type_template_id_e77538fc_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('el-drawer',_vm._g(_vm._b({on:{"opened":_vm.onOpen,"close":_vm.onClose}},'el-drawer',_vm.$attrs,false),_vm.$listeners),[_c('div',{staticStyle:{"height":"100%"}},[_c('el-row',{staticStyle:{"height":"100%","overflow":"auto"}},[_c('el-col',{staticClass:"left-editor",attrs:{"md":24,"lg":12}},[_c('div',{staticClass:"setting",attrs:{"title":_vm.$t('FormDrawer.ResourceReference')},on:{"click":_vm.showResource}},[_c('el-badge',{staticClass:"item",attrs:{"is-dot":!!_vm.resources.length}},[_c('i',{staticClass:"el-icon-setting"})])],1),_c('el-tabs',{staticClass:"editor-tabs",attrs:{"type":"card"},model:{value:(_vm.activeTab),callback:function ($$v) {_vm.activeTab=$$v},expression:"activeTab"}},[_c('el-tab-pane',{attrs:{"name":"html"}},[_c('span',{attrs:{"slot":"label"},slot:"label"},[(_vm.activeTab==='html')?_c('i',{staticClass:"el-icon-edit"}):_c('i',{staticClass:"el-icon-document"}),_vm._v(" template ")])]),_c('el-tab-pane',{attrs:{"name":"js"}},[_c('span',{attrs:{"slot":"label"},slot:"label"},[(_vm.activeTab==='js')?_c('i',{staticClass:"el-icon-edit"}):_c('i',{staticClass:"el-icon-document"}),_vm._v(" script ")])]),_c('el-tab-pane',{attrs:{"name":"css"}},[_c('span',{attrs:{"slot":"label"},slot:"label"},[(_vm.activeTab==='css')?_c('i',{staticClass:"el-icon-edit"}):_c('i',{staticClass:"el-icon-document"}),_vm._v(" css ")])])],1),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.activeTab==='html'),expression:"activeTab==='html'"}],staticClass:"tab-editor",attrs:{"id":"editorHtml"}}),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.activeTab==='js'),expression:"activeTab==='js'"}],staticClass:"tab-editor",attrs:{"id":"editorJs"}}),_c('div',{directives:[{name:"show",rawName:"v-show",value:(_vm.activeTab==='css'),expression:"activeTab==='css'"}],staticClass:"tab-editor",attrs:{"id":"editorCss"}})],1),_c('el-col',{staticClass:"right-preview",attrs:{"md":24,"lg":12}},[_c('div',{staticClass:"action-bar",style:({'text-align': 'left'})},[_c('span',{staticClass:"bar-btn",on:{"click":_vm.runCode}},[_c('i',{staticClass:"el-icon-refresh"}),_vm._v(" "+_vm._s(_vm.$t('FormDrawer.Refresh'))+" ")]),_c('span',{staticClass:"bar-btn",on:{"click":_vm.exportFile}},[_c('i',{staticClass:"el-icon-download"}),_vm._v(" "+_vm._s(_vm.$t('FormDrawer.ExportVuefile'))+" ")]),_c('span',{ref:"copyBtn",staticClass:"bar-btn copy-btn"},[_c('i',{staticClass:"el-icon-document-copy"}),_vm._v(" "+_vm._s(_vm.$t('FormDrawer.CopyCode'))+" ")]),_c('span',{staticClass:"bar-btn delete-btn",on:{"click":function($event){return _vm.$emit('update:visible', false)}}},[_c('i',{staticClass:"el-icon-circle-close"}),_vm._v(" "+_vm._s(_vm.$t('FormDrawer.close'))+" ")])]),_c('iframe',{directives:[{name:"show",rawName:"v-show",value:(_vm.isIframeLoaded),expression:"isIframeLoaded"}],ref:"previewPage",staticClass:"result-wrapper",attrs:{"frameborder":"0","src":"preview.html"},on:{"load":_vm.iframeLoad}}),_c('div',{directives:[{name:"show",rawName:"v-show",value:(!_vm.isIframeLoaded),expression:"!isIframeLoaded"},{name:"loading",rawName:"v-loading",value:(true),expression:"true"}],staticClass:"result-wrapper"})])],1)],1)]),_c('resource-dialog',{attrs:{"visible":_vm.resourceVisible,"origin-resource":_vm.resources},on:{"update:visible":function($event){_vm.resourceVisible=$event},"save":_vm.setResource}})],1)}
 var FormDrawervue_type_template_id_e77538fc_scoped_true_staticRenderFns = []
 
@@ -92946,7 +92947,7 @@ function makeUpCss(conf) {
 // EXTERNAL MODULE: ./src/utils/index.js
 var utils = __webpack_require__("ed08");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2ec1dd6a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/ResourceDialog.vue?vue&type=template&id=0a360954&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"538f9eba-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/ResourceDialog.vue?vue&type=template&id=0a360954&scoped=true&
 var ResourceDialogvue_type_template_id_0a360954_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('el-dialog',_vm._g(_vm._b({attrs:{"title":_vm.$t('ResourceDialog.Externalresource'),"width":"600px","close-on-click-modal":false},on:{"open":_vm.onOpen,"close":_vm.onClose}},'el-dialog',_vm.$attrs,false),_vm.$listeners),[_vm._l((_vm.resources),function(item,index){return _c('el-input',{key:index,staticClass:"url-item",attrs:{"placeholder":_vm.$t('ResourceDialog.resourceplaceholder'),"prefix-icon":"el-icon-link","clearable":""},model:{value:(_vm.resources[index]),callback:function ($$v) {_vm.$set(_vm.resources, index, $$v)},expression:"resources[index]"}},[_c('el-button',{attrs:{"slot":"append","icon":"el-icon-delete"},on:{"click":function($event){return _vm.deleteOne(index)}},slot:"append"})],1)}),_c('el-button-group',{staticClass:"add-item"},[_c('el-button',{attrs:{"plain":""},on:{"click":function($event){return _vm.addOne('https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js')}}},[_vm._v(" jQuery1.8.3 ")]),_c('el-button',{attrs:{"plain":""},on:{"click":function($event){return _vm.addOne('https://unpkg.com/http-vue-loader')}}},[_vm._v(" http-vue-loader ")]),_c('el-button',{attrs:{"icon":"el-icon-circle-plus-outline","plain":""},on:{"click":function($event){return _vm.addOne('')}}},[_vm._v(" "+_vm._s(_vm.$t('ResourceDialog.addother'))+" ")])],1),_c('div',{attrs:{"slot":"footer"},slot:"footer"},[_c('el-button',{on:{"click":_vm.close}},[_vm._v(" "+_vm._s(_vm.$t('ResourceDialog.cancel'))+" ")]),_c('el-button',{attrs:{"type":"primary"},on:{"click":_vm.handelConfirm}},[_vm._v(" "+_vm._s(_vm.$t('ResourceDialog.confirm'))+" ")])],1)],2)],1)}
 var ResourceDialogvue_type_template_id_0a360954_scoped_true_staticRenderFns = []
 
@@ -93572,7 +93573,7 @@ var FormDrawer_component = normalizeComponent(
 )
 
 /* harmony default export */ var FormDrawer = (FormDrawer_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2ec1dd6a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/JsonDrawer.vue?vue&type=template&id=013421cb&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"538f9eba-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/JsonDrawer.vue?vue&type=template&id=013421cb&scoped=true&
 var JsonDrawervue_type_template_id_013421cb_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('el-drawer',_vm._g(_vm._b({on:{"opened":_vm.onOpen,"close":_vm.onClose}},'el-drawer',_vm.$attrs,false),_vm.$listeners),[_c('div',{staticClass:"action-bar",style:({ 'text-align': 'left' })},[_c('span',{staticClass:"bar-btn",on:{"click":_vm.refresh}},[_c('i',{staticClass:"el-icon-refresh"}),_vm._v(" "+_vm._s(_vm.$t('JsonDrawer.Refresh'))+" ")]),_c('span',{ref:"copyBtn",staticClass:"bar-btn copy-json-btn"},[_c('i',{staticClass:"el-icon-document-copy"}),_vm._v(" "+_vm._s(_vm.$t('JsonDrawer.copyJSON'))+" ")]),_c('span',{staticClass:"bar-btn",on:{"click":_vm.exportJsonFile}},[_c('i',{staticClass:"el-icon-download"}),_vm._v(" "+_vm._s(_vm.$t('JsonDrawer.exportJSON'))+" ")]),_c('span',{staticClass:"bar-btn delete-btn",on:{"click":function($event){return _vm.$emit('update:visible', false)}}},[_c('i',{staticClass:"el-icon-circle-close"}),_vm._v(" "+_vm._s(_vm.$t('JsonDrawer.close'))+" ")])]),_c('div',{staticClass:"json-editor",attrs:{"id":"editorJson"}})])],1)}
 var JsonDrawervue_type_template_id_013421cb_scoped_true_staticRenderFns = []
 
@@ -93759,8 +93760,8 @@ var JsonDrawer_component = normalizeComponent(
 )
 
 /* harmony default export */ var JsonDrawer = (JsonDrawer_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2ec1dd6a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/RightPanel.vue?vue&type=template&id=04fe54dc&scoped=true&
-var RightPanelvue_type_template_id_04fe54dc_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"right-board"},[_c('el-tabs',{staticClass:"center-tabs",model:{value:(_vm.currentTab),callback:function ($$v) {_vm.currentTab=$$v},expression:"currentTab"}},[_c('el-tab-pane',{attrs:{"label":_vm.$t('RightPanel.formProperties'),"name":"form"}}),_c('el-tab-pane',{attrs:{"label":_vm.$t('RightPanel.ComponentProperties'),"name":"field"}}),_c('el-tab-pane',{attrs:{"label":"组件事件","name":"fieldFun"}})],1),_c('div',{staticClass:"field-box"},[_c('el-scrollbar',{staticClass:"right-scrollbar"},[_c('el-form',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentTab === 'field' && _vm.showField),expression:"currentTab === 'field' && showField"}],attrs:{"size":"small","label-width":"90px"}},[(_vm.activeData.tableType === 'subTable')?_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.FieldName'),"required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectTip'),"disabled":_vm.activeData.mandatory ? true : false},on:{"change":_vm.changeField},model:{value:(_vm.activeData.__vModel__),callback:function ($$v) {_vm.$set(_vm.activeData, "__vModel__", $$v)},expression:"activeData.__vModel__"}},_vm._l((_vm.options),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1):_vm._e(),(_vm.activeData.__config__.changeTag && !_vm.activeData.mandatory)?_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.ComponentType'),"required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.typeSelectTip'),"filterable":""},on:{"change":_vm.tagChange},model:{value:(_vm.activeData.__config__.tagIcon),callback:function ($$v) {_vm.$set(_vm.activeData.__config__, "tagIcon", $$v)},expression:"activeData.__config__.tagIcon"}},_vm._l((_vm.tagList),function(group){return _c('el-option-group',{key:group.label,attrs:{"label":group.label}},_vm._l((group.options),function(item){return _c('el-option',{key:item.__config__.label,attrs:{"label":item.__config__.label,"value":item.__config__.tagIcon}},[(item.__config__.tagIcon == 'Customcodetable')?_c('svg-icon',{staticClass:"node-icon",attrs:{"icon-class":"custom"}}):_c('svg-icon',{staticClass:"node-icon",attrs:{"icon-class":item.__config__.tagIcon}}),_c('span',[_vm._v(_vm._s(item.__config__.label))])],1)}),1)}),1)],1):_vm._e(),(_vm.activeData.__config__.tagIcon === 'Customcodetable')?_c('el-collapse',{model:{value:(_vm.activeNames),callback:function ($$v) {_vm.activeNames=$$v},expression:"activeNames"}},[_c('el-collapse-item',{attrs:{"title":"自定义查询","name":"1"}},[_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.Codetable'),"required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.Pleaseselect'),"disabled":_vm.activeData.mandatory ? true : false},on:{"change":_vm.changeFieldcodeName},model:{value:(_vm.activeData.codeName),callback:function ($$v) {_vm.$set(_vm.activeData, "codeName", $$v)},expression:"activeData.codeName"}},_vm._l((_vm.codeNameOptions),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1),_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.Echofields'),"required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectthe'),"disabled":_vm.activeData.mandatory ? true : false},on:{"change":_vm.changeField},model:{value:(_vm.activeData.codeModel),callback:function ($$v) {_vm.$set(_vm.activeData, "codeModel", $$v)},expression:"activeData.codeModel"}},_vm._l((_vm.codeModelArr),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1),_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.Querymethod'),"required":""}},[_c('el-radio-group',{model:{value:(_vm.activeData.codeType),callback:function ($$v) {_vm.$set(_vm.activeData, "codeType", $$v)},expression:"activeData.codeType"}},[_c('el-radio',{attrs:{"label":'3'}},[_vm._v(_vm._s(_vm.$t('RightPanel.Popup')))]),_c('el-radio',{attrs:{"label":'6'}},[_vm._v(_vm._s(_vm.$t('RightPanel.Inputbox')))])],1)],1),(_vm.activeData.__config__.tagIcon === 'Customcodetable' && _vm.activeData.codeType=='6')?_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.Requestparameters'),"required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectrequest'),"disabled":_vm.activeData.mandatory ? true : false},on:{"change":_vm.changeField},model:{value:(_vm.activeData.codeData),callback:function ($$v) {_vm.$set(_vm.activeData, "codeData", $$v)},expression:"activeData.codeData"}},_vm._l((_vm.codeDataArr),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1):_vm._e()],1)],1):_vm._e(),(_vm.activeData.__config__.tagIcon !== 'row' &&_vm.activeData.__config__.tagIcon !== 'custom' && _vm.activeData.__config__.tagIcon !== 'Customcodetable')?_c('el-collapse',{staticClass:"collapse-box",model:{value:(_vm.activeNames),callback:function ($$v) {_vm.activeNames=$$v},expression:"activeNames"}},[_c('el-collapse-item',{attrs:{"title":_vm.$t('RightPanel.Associateservice'),"name":"1"}},[_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.Isitrelated'),"required":""}},[_c('el-switch',{attrs:{"active-color":"#13ce66","inactive-color":"#ff4949"},on:{"change":_vm.changeIsCodeName},model:{value:(_vm.activeData.isCodeName),callback:function ($$v) {_vm.$set(_vm.activeData, "isCodeName", $$v)},expression:"activeData.isCodeName"}})],1),(_vm.activeData.__config__.tagIcon !== 'Customcodetable' && _vm.activeData.isCodeName)?_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.Associated'),"required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectrequest'),"disabled":_vm.activeData.mandatory ? true : false},on:{"change":_vm.changeNormalCodeName},model:{value:(_vm.activeData.normalCodeName),callback:function ($$v) {_vm.$set(_vm.activeData, "normalCodeName", $$v)},expression:"activeData.normalCodeName"}},_vm._l((_vm.normalCodeNameOptions),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1):_vm._e(),(_vm.activeData.__config__.tagIcon !== 'Customcodetable' && _vm.activeData.isCodeName && _vm.activeData.normalCodeName !== '')?_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.Echofields'),"required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectthe'),"disabled":_vm.activeData.mandatory ? true : false},on:{"change":_vm.changeField},model:{value:(_vm.activeData.normalCodeModel),callback:function ($$v) {_vm.$set(_vm.activeData, "normalCodeModel", $$v)},expression:"activeData.normalCodeModel"}},_vm._l((_vm.normalCodeModelOptions),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1):_vm._e()],1)],1):_vm._e(),(
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"538f9eba-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/RightPanel.vue?vue&type=template&id=2aeb0a14&scoped=true&
+var RightPanelvue_type_template_id_2aeb0a14_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"right-board"},[_c('el-tabs',{staticClass:"center-tabs",model:{value:(_vm.currentTab),callback:function ($$v) {_vm.currentTab=$$v},expression:"currentTab"}},[_c('el-tab-pane',{attrs:{"label":_vm.$t('RightPanel.formProperties'),"name":"form"}}),_c('el-tab-pane',{attrs:{"label":_vm.$t('RightPanel.ComponentProperties'),"name":"field"}}),_c('el-tab-pane',{attrs:{"label":"组件事件","name":"fieldFun"}})],1),_c('div',{staticClass:"field-box"},[_c('el-scrollbar',{staticClass:"right-scrollbar"},[_c('el-form',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentTab === 'field' && _vm.showField),expression:"currentTab === 'field' && showField"}],attrs:{"size":"small","label-width":"90px"}},[(_vm.activeData.tableType === 'subTable')?_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.FieldName'),"required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectTip'),"disabled":_vm.activeData.mandatory ? true : false},on:{"change":_vm.changeField},model:{value:(_vm.activeData.__vModel__),callback:function ($$v) {_vm.$set(_vm.activeData, "__vModel__", $$v)},expression:"activeData.__vModel__"}},_vm._l((_vm.options),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1):_vm._e(),(_vm.activeData.__config__.changeTag && !_vm.activeData.mandatory)?_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.ComponentType'),"required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.typeSelectTip'),"filterable":""},on:{"change":_vm.tagChange},model:{value:(_vm.activeData.__config__.tagIcon),callback:function ($$v) {_vm.$set(_vm.activeData.__config__, "tagIcon", $$v)},expression:"activeData.__config__.tagIcon"}},_vm._l((_vm.tagList),function(group){return _c('el-option-group',{key:group.label,attrs:{"label":group.label}},_vm._l((group.options),function(item){return _c('el-option',{key:item.__config__.label,attrs:{"label":item.__config__.label,"value":item.__config__.tagIcon}},[(item.__config__.tagIcon == 'Customcodetable')?_c('svg-icon',{staticClass:"node-icon",attrs:{"icon-class":"custom"}}):_c('svg-icon',{staticClass:"node-icon",attrs:{"icon-class":item.__config__.tagIcon}}),_c('span',[_vm._v(_vm._s(item.__config__.label))])],1)}),1)}),1)],1):_vm._e(),(_vm.activeData.__config__.tagIcon === 'Customcodetable')?_c('el-collapse',{model:{value:(_vm.activeNames),callback:function ($$v) {_vm.activeNames=$$v},expression:"activeNames"}},[_c('el-collapse-item',{attrs:{"title":"自定义查询","name":"1"}},[_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.Codetable'),"required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.Pleaseselect'),"disabled":_vm.activeData.mandatory ? true : false},on:{"change":_vm.changeFieldcodeName},model:{value:(_vm.activeData.codeName),callback:function ($$v) {_vm.$set(_vm.activeData, "codeName", $$v)},expression:"activeData.codeName"}},_vm._l((_vm.codeNameOptions),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1),_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.Echofields'),"required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectthe'),"disabled":_vm.activeData.mandatory ? true : false},on:{"change":_vm.changeField},model:{value:(_vm.activeData.codeModel),callback:function ($$v) {_vm.$set(_vm.activeData, "codeModel", $$v)},expression:"activeData.codeModel"}},_vm._l((_vm.codeModelArr),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1),_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.Querymethod'),"required":""}},[_c('el-radio-group',{model:{value:(_vm.activeData.codeType),callback:function ($$v) {_vm.$set(_vm.activeData, "codeType", $$v)},expression:"activeData.codeType"}},[_c('el-radio',{attrs:{"label":'3'}},[_vm._v(_vm._s(_vm.$t('RightPanel.Popup')))]),_c('el-radio',{attrs:{"label":'6'}},[_vm._v(_vm._s(_vm.$t('RightPanel.Inputbox')))])],1)],1),(_vm.activeData.__config__.tagIcon === 'Customcodetable' && _vm.activeData.codeType=='6')?_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.Requestparameters'),"required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectrequest'),"disabled":_vm.activeData.mandatory ? true : false},on:{"change":_vm.changeField},model:{value:(_vm.activeData.codeData),callback:function ($$v) {_vm.$set(_vm.activeData, "codeData", $$v)},expression:"activeData.codeData"}},_vm._l((_vm.codeDataArr),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1):_vm._e()],1)],1):_vm._e(),(_vm.activeData.__config__.tagIcon !== 'row' &&_vm.activeData.__config__.tagIcon !== 'custom' && _vm.activeData.__config__.tagIcon !== 'Customcodetable')?_c('el-collapse',{staticClass:"collapse-box",model:{value:(_vm.activeNames),callback:function ($$v) {_vm.activeNames=$$v},expression:"activeNames"}},[_c('el-collapse-item',{attrs:{"title":_vm.$t('RightPanel.Associateservice'),"name":"1"}},[_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.Isitrelated'),"required":""}},[_c('el-switch',{attrs:{"active-color":"#13ce66","inactive-color":"#ff4949"},on:{"change":_vm.changeIsCodeName},model:{value:(_vm.activeData.isCodeName),callback:function ($$v) {_vm.$set(_vm.activeData, "isCodeName", $$v)},expression:"activeData.isCodeName"}})],1),(_vm.activeData.__config__.tagIcon !== 'Customcodetable' && _vm.activeData.isCodeName)?_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.Associated'),"required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectrequest'),"disabled":_vm.activeData.mandatory ? true : false},on:{"change":_vm.changeNormalCodeName},model:{value:(_vm.activeData.normalCodeName),callback:function ($$v) {_vm.$set(_vm.activeData, "normalCodeName", $$v)},expression:"activeData.normalCodeName"}},_vm._l((_vm.normalCodeNameOptions),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1):_vm._e(),(_vm.activeData.__config__.tagIcon !== 'Customcodetable' && _vm.activeData.isCodeName && _vm.activeData.normalCodeName !== '')?_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.Echofields'),"required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectthe'),"disabled":_vm.activeData.mandatory ? true : false},on:{"change":_vm.changeField},model:{value:(_vm.activeData.normalCodeModel),callback:function ($$v) {_vm.$set(_vm.activeData, "normalCodeModel", $$v)},expression:"activeData.normalCodeModel"}},_vm._l((_vm.normalCodeModelOptions),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1):_vm._e()],1)],1):_vm._e(),(
           _vm.activeData.tableType === 'detailTable' &&
             _vm.activeData.__config__.tagIcon === 'row'
         )?_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.TableName')}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectTip')},on:{"change":_vm.changeField},model:{value:(_vm.activeData.__vModel__),callback:function ($$v) {_vm.$set(_vm.activeData, "__vModel__", $$v)},expression:"activeData.__vModel__"}},_vm._l((_vm.detailFields),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1):_vm._e(),(
@@ -93815,14 +93816,15 @@ var RightPanelvue_type_template_id_04fe54dc_scoped_true_render = function () {va
         )?_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.whetherRequired')}},[_c('el-switch',{model:{value:(_vm.activeData.__config__.required),callback:function ($$v) {_vm.$set(_vm.activeData.__config__, "required", $$v)},expression:"activeData.__config__.required"}})],1):_vm._e(),(_vm.activeData.__config__.layoutTree)?[_c('el-divider',[_vm._v(_vm._s(_vm.$t('RightPanel.LayoutStructureTree')))]),_c('el-tree',{attrs:{"data":[_vm.activeData.__config__],"props":_vm.layoutTreeProps,"node-key":"renderKey","default-expand-all":"","draggable":""},scopedSlots:_vm._u([{key:"default",fn:function(ref){
         var node = ref.node;
         var data = ref.data;
-return _c('span',{},[_c('span',{staticClass:"node-label"},[_c('svg-icon',{staticClass:"node-icon",attrs:{"icon-class":data.__config__ ? data.__config__.tagIcon : data.tagIcon}}),_vm._v(" "+_vm._s(node.label)+" ")],1)])}}],null,false,51646011)})]:_vm._e()],2),_c('el-form',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentTab === 'form'),expression:"currentTab === 'form'"}],attrs:{"size":"small","label-width":"90px"}},[_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.FormSize')}},[_c('el-radio-group',{model:{value:(_vm.formConf.size),callback:function ($$v) {_vm.$set(_vm.formConf, "size", $$v)},expression:"formConf.size"}},[_c('el-radio-button',{attrs:{"label":"medium"}},[_vm._v(_vm._s(_vm.$t('RightPanel.medium')))]),_c('el-radio-button',{attrs:{"label":"small"}},[_vm._v(_vm._s(_vm.$t('RightPanel.smaller')))]),_c('el-radio-button',{attrs:{"label":"mini"}},[_vm._v(_vm._s(_vm.$t('RightPanel.Mini')))])],1)],1),_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.LabelAlignment')}},[_c('el-radio-group',{model:{value:(_vm.formConf.labelPosition),callback:function ($$v) {_vm.$set(_vm.formConf, "labelPosition", $$v)},expression:"formConf.labelPosition"}},[_c('el-radio-button',{attrs:{"label":"left"}},[_vm._v(_vm._s(_vm.$t('RightPanel.AlignLeft')))]),_c('el-radio-button',{attrs:{"label":"right"}},[_vm._v(_vm._s(_vm.$t('RightPanel.AlignRight')))]),_c('el-radio-button',{attrs:{"label":"top"}},[_vm._v(_vm._s(_vm.$t('RightPanel.AlignTop')))])],1)],1),_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.LabelWidth')}},[_c('el-input',{attrs:{"type":"number","placeholder":_vm.$t('RightPanel.LabelWidthTip')},model:{value:(_vm.formConf.labelWidth),callback:function ($$v) {_vm.$set(_vm.formConf, "labelWidth", _vm._n($$v))},expression:"formConf.labelWidth"}})],1)],1),_c('el-form',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentTab === 'fieldFun'),expression:"currentTab === 'fieldFun'"}],attrs:{"size":"small","label-width":"120px"}},[_c('el-form-item',{attrs:{"label":"事件类型","required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectTip')},on:{"change":_vm.changeFieldFun},model:{value:(_vm.activeData.event),callback:function ($$v) {_vm.$set(_vm.activeData, "event", $$v)},expression:"activeData.event"}},_vm._l((_vm.funoptions),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1),_c('el-form-item',{attrs:{"required":""}},[_c('span',{attrs:{"slot":"label"},slot:"label"},[_c('span',{staticClass:"span-box"},[_c('span',[_vm._v("事件响应")]),_c('i',{staticClass:"el-icon-warning-outline ico-pre",on:{"click":_vm.exampleShow}})])]),_c('el-input',{attrs:{"type":"textarea","rows":8,"placeholder":"value['a'] + value['b'] = c"},on:{"change":_vm.changeInputFun},model:{value:(_vm.activeData.showfun),callback:function ($$v) {_vm.$set(_vm.activeData, "showfun", $$v)},expression:"activeData.showfun"}})],1),_c('el-form-item',{attrs:{"required":""}},[_c('span',{attrs:{"slot":"label"},slot:"label"},[_c('span',{staticClass:"span-box"},[_c('span',[_vm._v("移动事件响应")]),_c('i',{staticClass:"el-icon-warning-outline ico-pre",on:{"click":_vm.exampleShow}})])]),_c('el-input',{attrs:{"type":"textarea","rows":8,"placeholder":"value['a'] + value['b'] = c"},on:{"change":_vm.changeInputMfun},model:{value:(_vm.activeData.mfun),callback:function ($$v) {_vm.$set(_vm.activeData, "mfun", $$v)},expression:"activeData.mfun"}})],1),(
+return _c('span',{},[_c('span',{staticClass:"node-label"},[_c('svg-icon',{staticClass:"node-icon",attrs:{"icon-class":data.__config__ ? data.__config__.tagIcon : data.tagIcon}}),_vm._v(" "+_vm._s(node.label)+" ")],1)])}}],null,false,51646011)})]:_vm._e(),(
+          _vm.activeData.__config__.showInput !== undefined)?_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.whetherShowInput')}},[_c('el-switch',{model:{value:(_vm.activeData.__config__.showInput),callback:function ($$v) {_vm.$set(_vm.activeData.__config__, "showInput", $$v)},expression:"activeData.__config__.showInput"}})],1):_vm._e()],2),_c('el-form',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentTab === 'form'),expression:"currentTab === 'form'"}],attrs:{"size":"small","label-width":"90px"}},[_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.FormSize')}},[_c('el-radio-group',{model:{value:(_vm.formConf.size),callback:function ($$v) {_vm.$set(_vm.formConf, "size", $$v)},expression:"formConf.size"}},[_c('el-radio-button',{attrs:{"label":"medium"}},[_vm._v(_vm._s(_vm.$t('RightPanel.medium')))]),_c('el-radio-button',{attrs:{"label":"small"}},[_vm._v(_vm._s(_vm.$t('RightPanel.smaller')))]),_c('el-radio-button',{attrs:{"label":"mini"}},[_vm._v(_vm._s(_vm.$t('RightPanel.Mini')))])],1)],1),_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.LabelAlignment')}},[_c('el-radio-group',{model:{value:(_vm.formConf.labelPosition),callback:function ($$v) {_vm.$set(_vm.formConf, "labelPosition", $$v)},expression:"formConf.labelPosition"}},[_c('el-radio-button',{attrs:{"label":"left"}},[_vm._v(_vm._s(_vm.$t('RightPanel.AlignLeft')))]),_c('el-radio-button',{attrs:{"label":"right"}},[_vm._v(_vm._s(_vm.$t('RightPanel.AlignRight')))]),_c('el-radio-button',{attrs:{"label":"top"}},[_vm._v(_vm._s(_vm.$t('RightPanel.AlignTop')))])],1)],1),_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.LabelWidth')}},[_c('el-input',{attrs:{"type":"number","placeholder":_vm.$t('RightPanel.LabelWidthTip')},model:{value:(_vm.formConf.labelWidth),callback:function ($$v) {_vm.$set(_vm.formConf, "labelWidth", _vm._n($$v))},expression:"formConf.labelWidth"}})],1)],1),_c('el-form',{directives:[{name:"show",rawName:"v-show",value:(_vm.currentTab === 'fieldFun'),expression:"currentTab === 'fieldFun'"}],attrs:{"size":"small","label-width":"120px"}},[_c('el-form-item',{attrs:{"label":"事件类型","required":""}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectTip')},on:{"change":_vm.changeFieldFun},model:{value:(_vm.activeData.event),callback:function ($$v) {_vm.$set(_vm.activeData, "event", $$v)},expression:"activeData.event"}},_vm._l((_vm.funoptions),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1),_c('el-form-item',{attrs:{"required":""}},[_c('span',{attrs:{"slot":"label"},slot:"label"},[_c('span',{staticClass:"span-box"},[_c('span',[_vm._v("事件响应")]),_c('i',{staticClass:"el-icon-warning-outline ico-pre",on:{"click":_vm.exampleShow}})])]),_c('el-input',{attrs:{"type":"textarea","rows":8,"placeholder":"value['a'] + value['b'] = c"},on:{"change":_vm.changeInputFun},model:{value:(_vm.activeData.showfun),callback:function ($$v) {_vm.$set(_vm.activeData, "showfun", $$v)},expression:"activeData.showfun"}})],1),_c('el-form-item',{attrs:{"required":""}},[_c('span',{attrs:{"slot":"label"},slot:"label"},[_c('span',{staticClass:"span-box"},[_c('span',[_vm._v("移动事件响应")]),_c('i',{staticClass:"el-icon-warning-outline ico-pre",on:{"click":_vm.exampleShow}})])]),_c('el-input',{attrs:{"type":"textarea","rows":8,"placeholder":"value['a'] + value['b'] = c"},on:{"change":_vm.changeInputMfun},model:{value:(_vm.activeData.mfun),callback:function ($$v) {_vm.$set(_vm.activeData, "mfun", $$v)},expression:"activeData.mfun"}})],1),(
           _vm.activeData.tableType === 'detailTable' &&
             _vm.activeData.__config__.tagIcon !== 'row'
         )?_c('el-form-item',{attrs:{"label":_vm.$t('RightPanel.FieldName')}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectTip'),"filterable":""},on:{"change":_vm.checkFieldModel},model:{value:(_vm.onlyShow),callback:function ($$v) {_vm.onlyShow=$$v},expression:"onlyShow"}},_vm._l((_vm.onlyDetail),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1):_c('el-form-item',{attrs:{"label":"字段查询"}},[_c('el-select',{style:({ width: '100%' }),attrs:{"placeholder":_vm.$t('RightPanel.selectTip'),"disabled":_vm.activeData.mandatory ? true : false},on:{"change":_vm.checkFieldModel},model:{value:(_vm.onlyShow),callback:function ($$v) {_vm.onlyShow=$$v},expression:"onlyShow"}},_vm._l((_vm.options),function(item){return _c('el-option',{key:item.value,attrs:{"label":item.label,"value":item.value}})}),1)],1),_c('el-form-item',{attrs:{"label":"字段展示"}},[_c('div',[_vm._v(_vm._s(_vm.onlyShow))])])],1)],1)],1),_c('el-dialog',{staticClass:"example-box",attrs:{"append-to-body":true,"title":"示例（其中a、b、c、m为栏位绑定的v-model）","visible":_vm.dialogVisibleExample,"width":"50%"},on:{"update:visible":function($event){_vm.dialogVisibleExample=$event}}},[_c('el-form',{attrs:{"size":"small","label-width":"100px"}},[_c('el-form-item',{attrs:{"label":"主表字段相加"}},[_c('div',[_vm._v(" that.formConfCopy.fields.forEach(el => { "),_c('br'),_vm._v(" if (el.__vModel__ === 'c') {"),_c('br'),_vm._v(" that.$set(el.__config__, 'defaultValue', Number(value['a']) + Number(value['b'])); "),_c('br'),_vm._v(" that.formData['c'] = Number(value['a']) + Number(value['b'])"),_c('br'),_vm._v(" }}) ")])]),_c('el-form-item',{attrs:{"label":"明细字段相加"}},[_c('div',[_vm._v(" that.formConfCopy.fields.forEach(el => {"),_c('br'),_vm._v(" if(el.__config__.hasOwnProperty('children')) {"),_c('br'),_vm._v(" el.__config__.children.forEach(item => {"),_c('br'),_vm._v(" if (item.__vModel__ === 'c') {"),_c('br'),_vm._v(" that.$set(item.__config__, 'defaultValue', Number(value['a']) + Number(value['b']));"),_c('br'),_vm._v(" that.formData['c'] = Number(value['a']) + Number(value['b']);"),_c('br'),_vm._v(" }})}}); ")])]),_c('el-form-item',{attrs:{"label":"移动字段相加"}},[_c('div',[_vm._v(" that.jsonData.forEach(el => { "),_c('br'),_vm._v(" if (el.__vModel__ === 'c') {"),_c('br'),_vm._v(" that.$set(el.__config__,'defaultValue',value['a']+value['c']);"),_c('br'),_vm._v(" el.__config__ = Object.assign({}, el.__config__)"),_c('br'),_vm._v(" }}) ")])])],1)],1),_c('treeNode-dialog',{attrs:{"visible":_vm.dialogVisible,"title":_vm.$t('RightPanel.AddOptions')},on:{"update:visible":function($event){_vm.dialogVisible=$event},"commit":_vm.addNode}}),_c('icons-dialog',{attrs:{"visible":_vm.iconsVisible,"current":_vm.activeData[_vm.currentIconModel]},on:{"update:visible":function($event){_vm.iconsVisible=$event},"select":_vm.setIcon}})],1)}
-var RightPanelvue_type_template_id_04fe54dc_scoped_true_staticRenderFns = []
+var RightPanelvue_type_template_id_2aeb0a14_scoped_true_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/views/index/RightPanel.vue?vue&type=template&id=04fe54dc&scoped=true&
+// CONCATENATED MODULE: ./src/views/index/RightPanel.vue?vue&type=template&id=2aeb0a14&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.split.js
 var es_string_split = __webpack_require__("1276");
@@ -93943,7 +93945,7 @@ var defineProperty = __webpack_require__("ade3");
 // EXTERNAL MODULE: ./node_modules/util/util.js
 var util = __webpack_require__("3022");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2ec1dd6a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/TreeNodeDialog.vue?vue&type=template&id=878a9690&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"538f9eba-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/TreeNodeDialog.vue?vue&type=template&id=878a9690&scoped=true&
 var TreeNodeDialogvue_type_template_id_878a9690_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('el-dialog',_vm._g(_vm._b({attrs:{"close-on-click-modal":false,"modal-append-to-body":true,"append-to-body":true},on:{"open":_vm.onOpen,"close":_vm.onClose}},'el-dialog',_vm.$attrs,false),_vm.$listeners),[_c('el-row',{attrs:{"gutter":0}},[_c('el-form',{ref:"elForm",attrs:{"model":_vm.formData,"rules":_vm.rules,"size":"small","label-width":"100px"}},[_c('el-col',{attrs:{"span":24}},[_c('el-form-item',{attrs:{"label":_vm.$t('TreeNodeDialog.OptionName'),"prop":"label"}},[_c('el-input',{attrs:{"placeholder":_vm.$t('TreeNodeDialog.Optionnameplaceholder'),"clearable":""},model:{value:(_vm.formData.label),callback:function ($$v) {_vm.$set(_vm.formData, "label", $$v)},expression:"formData.label"}})],1)],1),_c('el-col',{attrs:{"span":24}},[_c('el-form-item',{attrs:{"label":_vm.$t('TreeNodeDialog.Optionvalue'),"prop":"value"}},[_c('el-input',{attrs:{"placeholder":_vm.$t('TreeNodeDialog.Optionvalueplaceholder'),"clearable":""},model:{value:(_vm.formData.value),callback:function ($$v) {_vm.$set(_vm.formData, "value", $$v)},expression:"formData.value"}},[_c('el-select',{style:({ width: '100px' }),attrs:{"slot":"append"},slot:"append",model:{value:(_vm.dataType),callback:function ($$v) {_vm.dataType=$$v},expression:"dataType"}},_vm._l((_vm.dataTypeOptions),function(item,index){return _c('el-option',{key:index,attrs:{"label":_vm.$t(item.label),"value":item.value,"disabled":item.disabled}})}),1)],1)],1)],1)],1)],1),_c('div',{attrs:{"slot":"footer"},slot:"footer"},[_c('el-button',{attrs:{"type":"primary"},on:{"click":_vm.handelConfirm}},[_vm._v(" "+_vm._s(_vm.$t('TreeNodeDialog.confirm'))+" ")]),_c('el-button',{on:{"click":_vm.close}},[_vm._v(" "+_vm._s(_vm.$t('TreeNodeDialog.cancel'))+" ")])],1)],1)],1)}
 var TreeNodeDialogvue_type_template_id_878a9690_scoped_true_staticRenderFns = []
 
@@ -94165,7 +94167,7 @@ var TreeNodeDialog_component = normalizeComponent(
 )
 
 /* harmony default export */ var TreeNodeDialog = (TreeNodeDialog_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2ec1dd6a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/IconsDialog.vue?vue&type=template&id=6ad22ae2&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"538f9eba-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/IconsDialog.vue?vue&type=template&id=6ad22ae2&scoped=true&
 var IconsDialogvue_type_template_id_6ad22ae2_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"icon-dialog"},[_c('el-dialog',_vm._g(_vm._b({attrs:{"width":"980px","modal-append-to-body":false},on:{"open":_vm.onOpen,"close":_vm.onClose}},'el-dialog',_vm.$attrs,false),_vm.$listeners),[_c('div',{attrs:{"slot":"title"},slot:"title"},[_vm._v(" "+_vm._s(_vm.$t('IconsDialog.SelectIcon'))+" "),_c('el-input',{style:({width: '260px'}),attrs:{"size":"mini","placeholder":_vm.$t('IconsDialog.Iconplaceholder'),"prefix-icon":"el-icon-search","clearable":""},model:{value:(_vm.key),callback:function ($$v) {_vm.key=$$v},expression:"key"}})],1),_c('ul',{staticClass:"icon-ul"},_vm._l((_vm.iconList),function(icon){return _c('li',{key:icon,class:_vm.active===icon?'active-item':'',on:{"click":function($event){return _vm.onSelect(icon)}}},[_c('i',{class:icon}),_c('div',[_vm._v(_vm._s(icon))])])}),0)])],1)}
 var IconsDialogvue_type_template_id_6ad22ae2_scoped_true_staticRenderFns = []
 
@@ -94302,6 +94304,11 @@ var axios_default = /*#__PURE__*/__webpack_require__.n(axios);
 
 var _computed;
 
+//
+//
+//
+//
+//
 //
 //
 //
@@ -96005,6 +96012,7 @@ var dateTimeFormat = {
         required: true,
         layout: 'colFormItem',
         span: 20,
+        showInput: true,
         document: 'https://element.eleme.cn/#/zh-CN/component/input',
         // 正则校验规则
         regList: []
@@ -96560,6 +96568,51 @@ var dateTimeFormat = {
         codeData: '',
         //请求参数
         codeTableId: ''
+      }, {
+        __config__: {
+          label: '抄送',
+          custom: true,
+          checkedValue: null,
+          labelWidth: null,
+          showLabel: true,
+          changeTag: true,
+          tag: 'el-input',
+          tagIcon: 'copy',
+          defaultValue: null,
+          required: true,
+          layout: 'colFormItem',
+          span: 20,
+          document: 'https://element.eleme.cn/#/zh-CN/component/input',
+          // 正则校验规则
+          regList: []
+        },
+        __vModel__: null,
+        // 组件的插槽属性
+        __slot__: {
+          prepend: '',
+          append: ''
+        },
+        // 其余的为可直接写在组件标签上的属性
+        placeholder: '请选择',
+        style: {
+          width: '100%'
+        },
+        clearable: true,
+        'prefix-icon': '',
+        'suffix-icon': 'el-icon-search',
+        maxlength: null,
+        readonly: true,
+        disabled: false,
+        singleChoice: false,
+        codeName: '',
+        //码表名称
+        codeModel: '',
+        //回显字段
+        codeType: '3',
+        //查询方式
+        codeData: '',
+        //请求参数
+        codeTableId: ''
       }]
     }];
   }), Object(defineProperty["a" /* default */])(_computed, "activeTag", function activeTag() {
@@ -97015,8 +97068,8 @@ var dateTimeFormat = {
 // EXTERNAL MODULE: ./src/views/index/RightPanel.vue?vue&type=style&index=0&lang=scss&
 var RightPanelvue_type_style_index_0_lang_scss_ = __webpack_require__("2dad");
 
-// EXTERNAL MODULE: ./src/views/index/RightPanel.vue?vue&type=style&index=1&id=04fe54dc&lang=scss&scoped=true&
-var RightPanelvue_type_style_index_1_id_04fe54dc_lang_scss_scoped_true_ = __webpack_require__("2ed4");
+// EXTERNAL MODULE: ./src/views/index/RightPanel.vue?vue&type=style&index=1&id=2aeb0a14&lang=scss&scoped=true&
+var RightPanelvue_type_style_index_1_id_2aeb0a14_lang_scss_scoped_true_ = __webpack_require__("da70");
 
 // CONCATENATED MODULE: ./src/views/index/RightPanel.vue
 
@@ -97030,11 +97083,11 @@ var RightPanelvue_type_style_index_1_id_04fe54dc_lang_scss_scoped_true_ = __webp
 
 var RightPanel_component = normalizeComponent(
   index_RightPanelvue_type_script_lang_js_,
-  RightPanelvue_type_template_id_04fe54dc_scoped_true_render,
-  RightPanelvue_type_template_id_04fe54dc_scoped_true_staticRenderFns,
+  RightPanelvue_type_template_id_2aeb0a14_scoped_true_render,
+  RightPanelvue_type_template_id_2aeb0a14_scoped_true_staticRenderFns,
   false,
   null,
-  "04fe54dc",
+  "2aeb0a14",
   null
   
 )
@@ -97776,6 +97829,7 @@ var layoutComponents = [{
     required: true,
     layout: 'colFormItem',
     span: 24,
+    showInput: true,
     document: 'https://element.eleme.cn/#/zh-CN/component/input',
     // 正则校验规则
     regList: [{
@@ -97804,7 +97858,7 @@ var layoutComponents = [{
 var logo = __webpack_require__("cf05");
 var logo_default = /*#__PURE__*/__webpack_require__.n(logo);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"2ec1dd6a-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/CodeTypeDialog.vue?vue&type=template&id=3a1249e4&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"538f9eba-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/views/index/CodeTypeDialog.vue?vue&type=template&id=3a1249e4&scoped=true&
 var CodeTypeDialogvue_type_template_id_3a1249e4_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('el-dialog',_vm._g(_vm._b({attrs:{"width":"500px","close-on-click-modal":false,"modal-append-to-body":false},on:{"open":_vm.onOpen,"close":_vm.onClose}},'el-dialog',_vm.$attrs,false),_vm.$listeners),[_c('el-row',{attrs:{"gutter":15}},[_c('el-form',{ref:"elForm",attrs:{"model":_vm.formData,"rules":_vm.rules,"size":"medium","label-width":"120px"}},[_c('el-col',{attrs:{"span":24}},[_c('el-form-item',{attrs:{"label":_vm.$t('CodeTypeDialog.GenerationType'),"prop":"type"}},[_c('el-radio-group',{model:{value:(_vm.formData.type),callback:function ($$v) {_vm.$set(_vm.formData, "type", $$v)},expression:"formData.type"}},_vm._l((_vm.typeOptions),function(item,index){return _c('el-radio-button',{key:index,attrs:{"label":item.value,"disabled":item.disabled}},[_vm._v(" "+_vm._s(item.label)+" ")])}),1)],1),(_vm.showFileName)?_c('el-form-item',{attrs:{"label":_vm.$t('CodeTypeDialog.fileName'),"prop":"fileName"}},[_c('el-input',{attrs:{"placeholder":_vm.$t('CodeTypeDialog.fileNameTips'),"clearable":""},model:{value:(_vm.formData.fileName),callback:function ($$v) {_vm.$set(_vm.formData, "fileName", $$v)},expression:"formData.fileName"}})],1):_vm._e()],1)],1)],1),_c('div',{attrs:{"slot":"footer"},slot:"footer"},[_c('el-button',{on:{"click":_vm.close}},[_vm._v(" "+_vm._s(_vm.$t('CodeTypeDialog.cancel'))+" ")]),_c('el-button',{attrs:{"type":"primary"},on:{"click":_vm.handelConfirm}},[_vm._v(" "+_vm._s(_vm.$t('CodeTypeDialog.confirm'))+" ")])],1)],1)],1)}
 var CodeTypeDialogvue_type_template_id_3a1249e4_scoped_true_staticRenderFns = []
 
@@ -98228,6 +98282,62 @@ var DraggableItem_component = normalizeComponent(
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -98273,102 +98383,103 @@ var idGlobal = getIdGlobal();
   computed: {
     leftComponents: function leftComponents() {
       return [{
-        title: 'home.InputTypeComponents',
+        title: "home.InputTypeComponents",
         list: [{
           // 组件的自定义配置
           __config__: {
-            label: this.$t('generator.SinglelineText'),
+            label: this.$t("generator.SinglelineText"),
             labelWidth: null,
             showLabel: true,
             changeTag: true,
-            tag: 'el-input',
-            tagIcon: 'input',
+            tag: "el-input",
+            tagIcon: "input",
             defaultValue: undefined,
             required: true,
-            layout: 'colFormItem',
+            layout: "colFormItem",
             span: 20,
-            document: 'https://element.eleme.cn/#/zh-CN/component/input',
+            showInput: true,
+            document: "https://element.eleme.cn/#/zh-CN/component/input",
             // 正则校验规则
             regList: []
           },
           // 组件的插槽属性
           __slot__: {
-            prepend: '',
-            append: ''
+            prepend: "",
+            append: ""
           },
           __vModel__: null,
           // 其余的为可直接写在组件标签上的属性
-          placeholder: this.$t('generator.enterTip'),
+          placeholder: this.$t("generator.enterTip"),
           style: {
-            width: '100%'
+            width: "100%"
           },
           clearable: true,
-          'prefix-icon': '',
-          'suffix-icon': '',
+          "prefix-icon": "",
+          "suffix-icon": "",
           maxlength: null,
-          'show-word-limit': false,
+          "show-word-limit": false,
           readonly: false,
           disabled: false
         }, {
           __config__: {
-            label: this.$t('generator.MultilineText'),
+            label: this.$t("generator.MultilineText"),
             labelWidth: null,
             showLabel: true,
-            tag: 'el-input',
-            tagIcon: 'textarea',
+            tag: "el-input",
+            tagIcon: "textarea",
             defaultValue: undefined,
             required: true,
-            layout: 'colFormItem',
+            layout: "colFormItem",
             span: 20,
             regList: [],
             changeTag: true,
-            document: 'https://element.eleme.cn/#/zh-CN/component/input'
+            document: "https://element.eleme.cn/#/zh-CN/component/input"
           },
           __vModel__: null,
-          type: 'textarea',
-          placeholder: this.$t('generator.enterTip'),
+          type: "textarea",
+          placeholder: this.$t("generator.enterTip"),
           autosize: {
             minRows: 4,
             maxRows: 4
           },
           style: {
-            width: '100%'
+            width: "100%"
           },
           maxlength: null,
-          'show-word-limit': false,
+          "show-word-limit": false,
           readonly: false,
           disabled: false
         }]
       }, {
-        title: 'home.selectComponents',
+        title: "home.selectComponents",
         list: [{
           __config__: {
-            label: this.$t('generator.DropDownSelection'),
+            label: this.$t("generator.DropDownSelection"),
             showLabel: true,
             labelWidth: null,
-            tag: 'el-select',
-            tagIcon: 'select',
+            tag: "el-select",
+            tagIcon: "select",
             defaultValue: undefined,
-            layout: 'colFormItem',
+            layout: "colFormItem",
             span: 20,
             required: true,
             regList: [],
             changeTag: true,
-            document: 'https://element.eleme.cn/#/zh-CN/component/select'
+            document: "https://element.eleme.cn/#/zh-CN/component/select"
           },
           __vModel__: null,
           __slot__: {
             options: [{
-              label: this.$t('generator.Option') + '1',
+              label: this.$t("generator.Option") + "1",
               value: 1
             }, {
-              label: this.$t('generator.Option') + '2',
+              label: this.$t("generator.Option") + "2",
               value: 2
             }]
           },
-          placeholder: this.$t('generator.selectTip'),
+          placeholder: this.$t("generator.selectTip"),
           style: {
-            width: '100%'
+            width: "100%"
           },
           clearable: true,
           disabled: false,
@@ -98376,379 +98487,450 @@ var idGlobal = getIdGlobal();
           multiple: false
         }, {
           __config__: {
-            label: this.$t('generator.CascadeSelection'),
+            label: this.$t("generator.CascadeSelection"),
             showLabel: true,
             labelWidth: null,
-            tag: 'el-cascader',
-            tagIcon: 'cascader',
-            layout: 'colFormItem',
+            tag: "el-cascader",
+            tagIcon: "cascader",
+            layout: "colFormItem",
             defaultValue: [],
-            dataType: 'dynamic',
+            dataType: "dynamic",
             span: 20,
             required: true,
             regList: [],
             changeTag: true,
-            document: 'https://element.eleme.cn/#/zh-CN/component/cascader'
+            document: "https://element.eleme.cn/#/zh-CN/component/cascader"
           },
           __vModel__: null,
           options: [{
             id: 1,
             value: 1,
-            label: this.$t('generator.Option') + '1',
+            label: this.$t("generator.Option") + "1",
             children: [{
               id: 2,
               value: 2,
-              label: this.$t('generator.Option') + '1-1'
+              label: this.$t("generator.Option") + "1-1"
             }]
           }],
-          placeholder: this.$t('generator.selectTip'),
+          placeholder: this.$t("generator.selectTip"),
           style: {
-            width: '100%'
+            width: "100%"
           },
           props: {
             props: {
               multiple: false,
-              label: 'label',
-              value: 'value',
-              children: 'children'
+              label: "label",
+              value: "value",
+              children: "children"
             }
           },
-          'show-all-levels': true,
+          "show-all-levels": true,
           disabled: false,
           clearable: true,
           filterable: false,
-          separator: '/'
+          separator: "/"
         }, {
           __config__: {
-            label: this.$t('generator.RadioBoxGroup'),
+            label: this.$t("generator.RadioBoxGroup"),
             labelWidth: null,
             showLabel: true,
-            tag: 'el-radio-group',
-            tagIcon: 'radio',
+            tag: "el-radio-group",
+            tagIcon: "radio",
             changeTag: true,
             defaultValue: undefined,
-            layout: 'colFormItem',
+            layout: "colFormItem",
             span: 20,
-            optionType: 'default',
+            optionType: "default",
             regList: [],
             required: true,
             border: false,
-            document: 'https://element.eleme.cn/#/zh-CN/component/radio'
+            document: "https://element.eleme.cn/#/zh-CN/component/radio"
           },
           __slot__: {
             options: [{
-              label: this.$t('generator.Option') + '1',
+              label: this.$t("generator.Option") + "1",
               value: 1
             }, {
-              label: this.$t('generator.Option') + '2',
+              label: this.$t("generator.Option") + "2",
               value: 2
             }]
           },
           style: {},
-          size: 'medium',
+          size: "medium",
           disabled: false,
           __vModel__: null
         }, {
           __config__: {
-            label: this.$t('generator.MultiBoxGroup'),
-            tag: 'el-checkbox-group',
-            tagIcon: 'checkbox',
+            label: this.$t("generator.MultiBoxGroup"),
+            tag: "el-checkbox-group",
+            tagIcon: "checkbox",
             defaultValue: [],
             span: 20,
             showLabel: true,
             labelWidth: null,
-            layout: 'colFormItem',
-            optionType: 'default',
+            layout: "colFormItem",
+            optionType: "default",
             required: true,
             regList: [],
             changeTag: true,
             border: false,
-            document: 'https://element.eleme.cn/#/zh-CN/component/checkbox'
+            document: "https://element.eleme.cn/#/zh-CN/component/checkbox"
           },
           __vModel__: null,
           __slot__: {
             options: [{
-              label: this.$t('generator.Option') + '1',
+              label: this.$t("generator.Option") + "1",
               value: 1
             }, {
-              label: this.$t('generator.Option') + '2',
+              label: this.$t("generator.Option") + "2",
               value: 2
             }, {
-              label: this.$t('generator.Option') + '3',
+              label: this.$t("generator.Option") + "3",
               value: 3
             }]
           },
           style: {},
-          size: 'medium',
+          size: "medium",
           min: null,
           max: null,
           disabled: false
         }, {
           __config__: {
-            label: this.$t('generator.switch'),
-            tag: 'el-switch',
-            tagIcon: 'switch',
+            label: this.$t("generator.switch"),
+            tag: "el-switch",
+            tagIcon: "switch",
             defaultValue: false,
             span: 20,
             showLabel: true,
             labelWidth: null,
-            layout: 'colFormItem',
+            layout: "colFormItem",
             required: true,
             regList: [],
             changeTag: true,
-            document: 'https://element.eleme.cn/#/zh-CN/component/switch'
+            document: "https://element.eleme.cn/#/zh-CN/component/switch"
           },
           __vModel__: null,
           style: {},
           disabled: false,
-          'active-text': '',
-          'inactive-text': '',
-          'active-color': null,
-          'inactive-color': null,
-          'active-value': true,
-          'inactive-value': false
+          "active-text": "",
+          "inactive-text": "",
+          "active-color": null,
+          "inactive-color": null,
+          "active-value": true,
+          "inactive-value": false
         }, {
           __config__: {
-            label: this.$t('generator.timePicker'),
-            tag: 'el-time-picker',
-            tagIcon: 'time',
+            label: this.$t("generator.timePicker"),
+            tag: "el-time-picker",
+            tagIcon: "time",
             defaultValue: null,
             span: 20,
             showLabel: true,
-            layout: 'colFormItem',
+            layout: "colFormItem",
             labelWidth: null,
             required: true,
             regList: [],
             changeTag: true,
-            document: 'https://element.eleme.cn/#/zh-CN/component/time-picker'
+            document: "https://element.eleme.cn/#/zh-CN/component/time-picker"
           },
           __vModel__: null,
-          placeholder: this.$t('generator.selectTip'),
+          placeholder: this.$t("generator.selectTip"),
           style: {
-            width: '100%'
+            width: "100%"
           },
           disabled: false,
           clearable: true,
-          'picker-options': {
-            selectableRange: '00:00:00-23:59:59'
+          "picker-options": {
+            selectableRange: "00:00:00-23:59:59"
           },
-          format: 'HH:mm',
-          'value-format': 'HH:mm'
+          format: "HH:mm",
+          "value-format": "HH:mm"
         }, {
           __config__: {
-            label: this.$t('generator.timeRanges'),
-            tag: 'el-time-picker',
-            tagIcon: 'time-range',
+            label: this.$t("generator.timeRanges"),
+            tag: "el-time-picker",
+            tagIcon: "time-range",
             span: 20,
             showLabel: true,
             labelWidth: null,
-            layout: 'colFormItem',
+            layout: "colFormItem",
             defaultValue: null,
             required: true,
             regList: [],
             changeTag: true,
-            document: 'https://element.eleme.cn/#/zh-CN/component/time-picker'
+            document: "https://element.eleme.cn/#/zh-CN/component/time-picker"
           },
           __vModel__: null,
           style: {
-            width: '100%'
+            width: "100%"
           },
           disabled: false,
           clearable: true,
-          'is-range': true,
-          'range-separator': this.$t('generator.to'),
-          'start-placeholder': this.$t('generator.startTime'),
-          'end-placeholder': this.$t('generator.endTime'),
-          format: 'HH:mm',
-          'value-format': 'HH:mm'
+          "is-range": true,
+          "range-separator": this.$t("generator.to"),
+          "start-placeholder": this.$t("generator.startTime"),
+          "end-placeholder": this.$t("generator.endTime"),
+          format: "HH:mm",
+          "value-format": "HH:mm"
         }, {
           __config__: {
-            label: this.$t('generator.DatePicker'),
-            tag: 'el-date-picker',
-            tagIcon: 'date',
+            label: this.$t("generator.DatePicker"),
+            tag: "el-date-picker",
+            tagIcon: "date",
             defaultValue: null,
             showLabel: true,
             labelWidth: null,
             span: 20,
-            layout: 'colFormItem',
+            layout: "colFormItem",
             required: true,
             regList: [],
             changeTag: true,
-            document: 'https://element.eleme.cn/#/zh-CN/component/date-picker'
+            document: "https://element.eleme.cn/#/zh-CN/component/date-picker"
           },
           __vModel__: null,
-          placeholder: this.$t('generator.selectTip'),
-          type: 'date',
+          placeholder: this.$t("generator.selectTip"),
+          type: "date",
           style: {
-            width: '100%'
+            width: "100%"
           },
           disabled: false,
           clearable: true,
-          format: 'yyyy-MM-dd',
-          'value-format': 'yyyy-MM-dd',
+          format: "yyyy-MM-dd",
+          "value-format": "yyyy-MM-dd",
           readonly: false
         }, {
           __config__: {
-            label: this.$t('generator.dateRange'),
-            tag: 'el-date-picker',
-            tagIcon: 'date-range',
+            label: this.$t("generator.dateRange"),
+            tag: "el-date-picker",
+            tagIcon: "date-range",
             defaultValue: null,
             span: 20,
             showLabel: true,
             labelWidth: null,
             required: true,
-            layout: 'colFormItem',
+            layout: "colFormItem",
             regList: [],
             changeTag: true,
-            document: 'https://element.eleme.cn/#/zh-CN/component/date-picker'
+            document: "https://element.eleme.cn/#/zh-CN/component/date-picker"
           },
           __vModel__: null,
           style: {
-            width: '100%'
+            width: "100%"
           },
-          type: 'daterange',
-          'range-separator': this.$t('generator.to'),
-          'start-placeholder': this.$t('generator.startDate'),
-          'end-placeholder': this.$t('generator.endDate'),
+          type: "daterange",
+          "range-separator": this.$t("generator.to"),
+          "start-placeholder": this.$t("generator.startDate"),
+          "end-placeholder": this.$t("generator.endDate"),
           disabled: false,
           clearable: true,
-          format: 'yyyy-MM-dd',
-          'value-format': 'yyyy-MM-dd',
+          format: "yyyy-MM-dd",
+          "value-format": "yyyy-MM-dd",
           readonly: false
         }, {
           __config__: {
-            label: this.$t('generator.userDefinedSearch'),
+            label: this.$t("generator.userDefinedSearch"),
             custom: true,
             checkedValue: null,
             labelWidth: null,
             showLabel: true,
             changeTag: true,
-            tag: 'el-input',
-            tagIcon: 'custom',
+            tag: "el-input",
+            tagIcon: "custom",
             defaultValue: null,
             required: true,
-            layout: 'colFormItem',
+            layout: "colFormItem",
             span: 20,
-            document: 'https://element.eleme.cn/#/zh-CN/component/input',
+            document: "https://element.eleme.cn/#/zh-CN/component/input",
             // 正则校验规则
             regList: []
           },
           __vModel__: null,
           // 组件的插槽属性
           __slot__: {
-            prepend: '',
-            append: ''
+            prepend: "",
+            append: ""
           },
           // 其余的为可直接写在组件标签上的属性
-          placeholder: this.$t('generator.selectTip'),
+          placeholder: this.$t("generator.selectTip"),
           style: {
-            width: '100%'
+            width: "100%"
           },
           clearable: true,
-          'prefix-icon': 'el-icon-search',
-          'suffix-icon': '',
+          "prefix-icon": "el-icon-search",
+          "suffix-icon": "",
           maxlength: null,
           readonly: true,
           disabled: false,
-          cFun: ''
+          cFun: ""
         }, {
           __config__: {
-            label: this.$t('generator.Customcodetable'),
+            label: this.$t("generator.Customcodetable"),
             custom: true,
             checkedValue: null,
             labelWidth: null,
             showLabel: true,
             changeTag: true,
-            tag: 'el-input',
-            tagIcon: 'Customcodetable',
+            tag: "el-input",
+            tagIcon: "Customcodetable",
             defaultValue: null,
             required: true,
-            layout: 'colFormItem',
+            layout: "colFormItem",
             span: 20,
-            document: 'https://element.eleme.cn/#/zh-CN/component/input',
+            document: "https://element.eleme.cn/#/zh-CN/component/input",
             // 正则校验规则
             regList: []
           },
           __vModel__: null,
           // 组件的插槽属性
           __slot__: {
-            prepend: '',
-            append: ''
+            prepend: "",
+            append: ""
           },
           // 其余的为可直接写在组件标签上的属性
-          placeholder: this.$t('generator.selectTip'),
+          placeholder: this.$t("generator.selectTip"),
           style: {
-            width: '100%'
+            width: "100%"
           },
           clearable: true,
-          'prefix-icon': 'el-icon-search',
-          'suffix-icon': '',
+          "prefix-icon": "el-icon-search",
+          "suffix-icon": "",
           maxlength: null,
           readonly: true,
           disabled: false,
           singleChoice: false,
-          codeName: '',
+          codeName: "",
           //码表名称
-          codeModel: '',
+          codeModel: "",
           //回显字段
-          codeType: '3',
+          codeType: "3",
           //查询方式
-          codeData: '',
+          codeData: "",
           //请求参数
-          codeTableId: ''
+          codeTableId: ""
+        }, {
+          __config__: {
+            label: "抄送",
+            custom: true,
+            checkedValue: null,
+            labelWidth: null,
+            showLabel: true,
+            changeTag: true,
+            tag: "el-input",
+            tagIcon: "Customcodetable",
+            defaultValue: null,
+            required: true,
+            layout: "colFormItem",
+            span: 20,
+            document: "https://element.eleme.cn/#/zh-CN/component/input",
+            // 正则校验规则
+            regList: []
+          },
+          __vModel__: null,
+          // 组件的插槽属性
+          __slot__: {
+            prepend: "",
+            append: ""
+          },
+          // 其余的为可直接写在组件标签上的属性
+          placeholder: "请选择",
+          style: {
+            width: "100%"
+          },
+          clearable: true,
+          "prefix-icon": "",
+          "suffix-icon": "el-icon-search",
+          maxlength: null,
+          readonly: true,
+          disabled: false,
+          singleChoice: false,
+          codeName: "",
+          //码表名称
+          codeModel: "",
+          //回显字段
+          codeType: "3",
+          //查询方式
+          codeData: "",
+          //请求参数
+          codeTableId: ""
         }]
       }, {
-        title: 'home.LayoutComponents',
+        title: "home.LayoutComponents",
         list: [{
           __config__: {
-            layout: 'rowFormItem',
-            tagIcon: 'row',
-            label: this.$t('generator.detailTable'),
+            layout: "rowFormItem",
+            tagIcon: "row",
+            label: this.$t("generator.detailTable"),
             layoutTree: true,
             children: [],
-            document: 'https://element.eleme.cn/#/zh-CN/component/table'
+            document: "https://element.eleme.cn/#/zh-CN/component/table"
           },
-          type: 'default',
-          justify: 'start',
-          align: 'top',
+          type: "default",
+          justify: "start",
+          align: "top",
           tableType: "detailTable"
+        }, {
+          __config__: {
+            label: "按钮",
+            showLabel: true,
+            changeTag: true,
+            labelWidth: null,
+            tag: "el-button",
+            tagIcon: "button",
+            defaultValue: undefined,
+            span: 12,
+            layout: "colFormItem",
+            buttonText: 'www',
+            document: "https://element.eleme.cn/#/zh-CN/component/button"
+          },
+          __slot__: {
+            default: ""
+          },
+          type: "primary",
+          icon: "el-icon-search",
+          round: false,
+          size: "medium",
+          plain: false,
+          circle: false,
+          cFun: null,
+          disabled: false
         }]
       }];
     },
     drawingDefalut: function drawingDefalut() {
       return [{
         __config__: {
-          label: this.$t('generator.SinglelineText'),
+          label: this.$t("generator.SinglelineText"),
           labelWidth: null,
           showLabel: true,
           changeTag: true,
-          tag: 'el-input',
-          tagIcon: 'input',
+          tag: "el-input",
+          tagIcon: "input",
           defaultValue: undefined,
           required: true,
-          layout: 'colFormItem',
+          layout: "colFormItem",
           span: 24,
-          document: 'https://element.eleme.cn/#/zh-CN/component/input',
+          showInput: true,
+          document: "https://element.eleme.cn/#/zh-CN/component/input",
           // 正则校验规则
           regList: [{
-            pattern: '/^1(3|4|5|7|8|9)\\d{9}$/',
-            message: this.$t('generator.phonenumbererror')
+            pattern: "/^1(3|4|5|7|8|9)\\d{9}$/",
+            message: this.$t("generator.phonenumbererror")
           }]
         },
         // 组件的插槽属性
         __slot__: {
-          prepend: '',
-          append: ''
+          prepend: "",
+          append: ""
         },
-        placeholder: this.$t('generator.phoneplaceholder'),
+        placeholder: this.$t("generator.phoneplaceholder"),
         style: {
-          width: '100%'
+          width: "100%"
         },
         clearable: true,
-        'prefix-icon': 'el-icon-mobile',
-        'suffix-icon': '',
+        "prefix-icon": "el-icon-mobile",
+        "suffix-icon": "",
         maxlength: 11,
-        'show-word-limit': true,
+        "show-word-limit": true,
         readonly: false,
         disabled: false
       }];
@@ -98762,37 +98944,38 @@ var idGlobal = getIdGlobal();
       logo: logo_default.a,
       drawingList: [{
         __config__: {
-          label: this.$t('generator.SinglelineText'),
+          label: this.$t("generator.SinglelineText"),
           labelWidth: null,
           showLabel: true,
           changeTag: true,
-          tag: 'el-input',
-          tagIcon: 'input',
+          tag: "el-input",
+          tagIcon: "input",
           defaultValue: undefined,
           required: true,
-          layout: 'colFormItem',
+          layout: "colFormItem",
           span: 24,
-          document: 'https://element.eleme.cn/#/zh-CN/component/input',
+          showInput: true,
+          document: "https://element.eleme.cn/#/zh-CN/component/input",
           // 正则校验规则
           regList: [{
-            pattern: '/^1(3|4|5|7|8|9)\\d{9}$/',
-            message: this.$t('generator.phonenumbererror')
+            pattern: "/^1(3|4|5|7|8|9)\\d{9}$/",
+            message: this.$t("generator.phonenumbererror")
           }]
         },
         // 组件的插槽属性
         __slot__: {
-          prepend: '',
-          append: ''
+          prepend: "",
+          append: ""
         },
-        placeholder: this.$t('generator.phoneplaceholder'),
+        placeholder: this.$t("generator.phoneplaceholder"),
         style: {
-          width: '100%'
+          width: "100%"
         },
         clearable: true,
-        'prefix-icon': 'el-icon-mobile',
-        'suffix-icon': '',
+        "prefix-icon": "el-icon-mobile",
+        "suffix-icon": "",
         maxlength: 11,
-        'show-word-limit': true,
+        "show-word-limit": true,
         readonly: false,
         disabled: false
       }],
@@ -98800,7 +98983,7 @@ var idGlobal = getIdGlobal();
       labelWidth: 120,
       dialogMode: false,
       drawingData: {},
-      activeId: '',
+      activeId: "",
       drawerVisible: false,
       formData: {},
       dialogVisible: false,
@@ -98812,12 +98995,12 @@ var idGlobal = getIdGlobal();
       saveDrawingListDebounce: debounce(340, saveDrawingList),
       saveIdGlobalDebounce: debounce(340, saveIdGlobal),
       formConf: {
-        formRef: 'elForm',
-        formModel: 'formData',
-        size: 'medium',
-        labelPosition: 'right',
+        formRef: "elForm",
+        formModel: "formData",
+        size: "medium",
+        labelPosition: "right",
         labelWidth: 120,
-        formRules: 'rules',
+        formRules: "rules",
         gutter: 15,
         disabled: false,
         span: 20,
@@ -98831,7 +99014,7 @@ var idGlobal = getIdGlobal();
         return;
       }
 
-      this.activeData.placeholder = this.$t('home.enterTip') + val;
+      this.activeData.placeholder = this.$t("home.enterTip") + val;
     },
     activeId: {
       handler: function handler(val) {
@@ -98856,7 +99039,7 @@ var idGlobal = getIdGlobal();
               if (res.__config__.tagIcon === "row") {
                 data.__config__.children.splice(index, 1);
 
-                _this2.$message.error(_this2.$t('home.rowTip'));
+                _this2.$message.error(_this2.$t("home.rowTip"));
               }
             });
 
@@ -98905,8 +99088,8 @@ var idGlobal = getIdGlobal();
         var codeStr = _this3.generateCode();
 
         _this3.$notify({
-          title: _this3.$t('home.success'),
-          message: _this3.$t('home.copyTip'),
+          title: _this3.$t("home.success"),
+          message: _this3.$t("home.copyTip"),
           type: "success"
         });
 
@@ -98914,15 +99097,15 @@ var idGlobal = getIdGlobal();
       }
     });
     clipboard.on("error", function (e) {
-      _this3.$message.error(_this3.$t('home.copyfailure'));
+      _this3.$message.error(_this3.$t("home.copyfailure"));
     });
   },
   methods: {
     languages: function languages(e) {
       if (e == 1) {
-        this.$set(this.$i18n, 'locale', 'zh');
+        this.$set(this.$i18n, "locale", "zh");
       } else {
-        this.$set(this.$i18n, 'locale', 'en');
+        this.$set(this.$i18n, "locale", "en");
       }
     },
     getDetailValue: function getDetailValue() {
@@ -98975,17 +99158,17 @@ var idGlobal = getIdGlobal();
       if (data.fieldType === "date") {
         regList.push({
           pattern: "/^[1-2]{1}([0-9]{3})-([0-1]{1})([0-9]{1})-(([0-2]){1}([0-9]{1})|([3]{1}[0-1]{1}))$/",
-          message: this.$t('home.DateError')
+          message: this.$t("home.DateError")
         });
       } else if (data.fieldType === "numeric") {
         regList.push({
           pattern: "/^[0-9]+(.[0-9]*)?$/",
-          message: this.$t('home.numberTip')
+          message: this.$t("home.numberTip")
         });
       } else {
         regList.push({
           pattern: "/^.{0," + data.fieldLength + "}$/",
-          message: this.$t('home.maxlength') + data.fieldLength
+          message: this.$t("home.maxlength") + data.fieldLength
         });
       }
 
@@ -99043,7 +99226,7 @@ var idGlobal = getIdGlobal();
           if (i > 1) {
             _this4.rightPanel = false;
 
-            _this4.$message.error(_this4.$t('home.nametip'));
+            _this4.$message.error(_this4.$t("home.nametip"));
 
             _this4.$refs.myRight.clean();
 
@@ -99057,7 +99240,7 @@ var idGlobal = getIdGlobal();
               if ((res.__config__.tagIcon === "custom" || res.__config__.tagIcon === "mechanism" || res.__config__.tagIcon === "user") && (de.fieldType === "date" || de.fieldType === "numeric")) {
                 _this4.rightPanel = false;
 
-                _this4.$message.error("date" + _this4.$t('home.or') + "numeric" + _this4.$t('home.noSupportTip'));
+                _this4.$message.error("date" + _this4.$t("home.or") + "numeric" + _this4.$t("home.noSupportTip"));
 
                 _this4.$refs.myRight.clean();
 
@@ -99083,7 +99266,7 @@ var idGlobal = getIdGlobal();
               if (i > 1) {
                 _this4.rightPanel = false;
 
-                _this4.$message.error(_this4.$t('home.nametip'));
+                _this4.$message.error(_this4.$t("home.nametip"));
 
                 _this4.$refs.myRight.clean();
 
@@ -99097,7 +99280,7 @@ var idGlobal = getIdGlobal();
                   if ((child.__config__.tagIcon === "custom" || child.__config__.tagIcon === "mechanism" || child.__config__.tagIcon === "user") && (de.fieldType === "date" || de.fieldType === "numeric")) {
                     _this4.rightPanel = false;
 
-                    _this4.$message.error("date" + _this4.$t('home.or') + "numeric" + _this4.$t('home.noSupportTip'));
+                    _this4.$message.error("date" + _this4.$t("home.or") + "numeric" + _this4.$t("home.noSupportTip"));
 
                     _this4.$refs.myRight.clean();
 
@@ -99141,7 +99324,7 @@ var idGlobal = getIdGlobal();
     empty: function empty() {
       var _this5 = this;
 
-      this.$confirm(this.$t('home.emptyTip'), this.$t('home.tips'), {
+      this.$confirm(this.$t("home.emptyTip"), this.$t("home.tips"), {
         type: "warning"
       }).then(function () {
         _this5.drawingList = _this5.drawingList.filter(function (item) {
@@ -99297,8 +99480,8 @@ var idGlobal = getIdGlobal();
 
 var Home_component = normalizeComponent(
   index_Homevue_type_script_lang_js_,
-  Homevue_type_template_id_4c0a163a_render,
-  Homevue_type_template_id_4c0a163a_staticRenderFns,
+  Homevue_type_template_id_040129ed_render,
+  Homevue_type_template_id_040129ed_staticRenderFns,
   false,
   null,
   null,

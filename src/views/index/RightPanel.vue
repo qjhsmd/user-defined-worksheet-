@@ -27,7 +27,7 @@
                         </el-select>
                     </el-form-item>
                     <el-form-item v-if="activeData.__config__.changeTag && !activeData.mandatory"
-                        :label="$t('RightPanel.ComponentType')+55" required>
+                        :label="$t('RightPanel.ComponentType')" required>
                         <el-select v-model="activeData.__config__.tagIcon" :placeholder="$t('RightPanel.typeSelectTip')"
                             :style="{ width: '100%' }" @change="tagChange" filterable>
                             <el-option-group v-for="group in tagList" :key="group.label" :label="group.label">
@@ -870,6 +870,11 @@
                             </span>
                         </el-tree>
                     </template>
+                    <!-- 新增隐藏域属性 qjh -->
+                    <el-form-item v-if="
+              activeData.__config__.showInput !== undefined" :label="$t('RightPanel.whetherShowInput')">
+                        <el-switch v-model="activeData.__config__.showInput" />
+                    </el-form-item>
 
                     <!-- <template v-if="activeData.__config__.layout === 'colFormItem'">
             <el-divider>正则校验</el-divider>
@@ -1765,6 +1770,7 @@ export default {
                         required: true,
                         layout: 'colFormItem',
                         span: 20,
+                        showInput:true,
                         document: 'https://element.eleme.cn/#/zh-CN/component/input',
                         // 正则校验规则
                         regList: []
@@ -1784,7 +1790,7 @@ export default {
                     maxlength: null,
                     'show-word-limit': false,
                     readonly: false,
-                    disabled: false
+                    disabled: false,
                 },
                 {
                     __config__: {
@@ -2315,7 +2321,7 @@ export default {
                             codeType: '3',//查询方式
                             codeData: '',//请求参数
                             codeTableId: ''
-                        },
+                        }
                     ],
                 }
             ];

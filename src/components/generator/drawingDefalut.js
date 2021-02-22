@@ -18,6 +18,7 @@ export default [
       required: true,
       layout: 'colFormItem',
       span: 24,
+      showInput:true,
       document: 'https://element.eleme.cn/#/zh-CN/component/input',
       // 正则校验规则
       regList: [{
