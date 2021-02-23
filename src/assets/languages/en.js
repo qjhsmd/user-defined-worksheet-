@@ -149,7 +149,9 @@ module.exports =  {
     associate:'Do you want to associate custom code table',
     Associateservice: 'Associate selected service',
     Associated:'Service selection',
-    whetherShowInput:'Whether or not shown'
+    whetherShowInput:'Whether or not shown',
+    ProcessType:'Process Type',
+    ProcessPlaceholder:'Please select process',
   },
   CodeTypeDialog:{
     GenerationType:'Generation Type',
@@ -245,7 +247,8 @@ module.exports =  {
     Customcodetable:'User defined search',
     detailTable:'Detail table',
     phonenumbererror:'Mobile phone number format error',
-    phoneplaceholder:'Please enter your mobile phone number'
+    phoneplaceholder:'Please enter your mobile phone number',
+    associatedProcess:'Associated process',
   },
   DraggableItem:{
     copy:'Copy',

@@ -148,7 +148,9 @@ module.exports =  {
     associate:'是否关联自定义码表',
     Associateservice:'是否关联已选择服务',
     Associated:'服务选择',
-    whetherShowInput:'是否显示'
+    whetherShowInput:'是否显示',
+    ProcessType:'流程类型',
+    ProcessPlaceholder:'请选择流程',
   },
   FormDrawer:{
     ResourceReference:'资源引用',
@@ -234,8 +236,8 @@ module.exports =  {
     Customcodetable:'自定义查询',
     detailTable:'明细表',
     phonenumbererror:'手机号格式错误',
-    phoneplaceholder:'请输入手机号'
-    
+    phoneplaceholder:'请输入手机号',
+    associatedProcess:'关联流程',
   },
   CodeTypeDialog:{
     GenerationType:'生成类型',

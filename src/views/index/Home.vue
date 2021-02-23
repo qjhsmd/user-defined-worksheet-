@@ -116,6 +116,7 @@
         @AssembleFormData="AssembleFormData"
         :codeModelOptions="codeModelOptions"
         :codeNameOptions="codeNameOptions"
+        :processOptions="processOptions"
         :options="fieldName"
         :clickName="clickName"
         :codeList="codeList"
@@ -218,6 +219,7 @@ export default {
     "language",
     "token",
     "codeNameOptions",
+    "processOptions",
     "codeModelOptions",
     "codeDataOptions",
   ],
@@ -663,6 +665,47 @@ export default {
               codeType: "3", //查询方式
               codeData: "", //请求参数
               codeTableId: "",
+            },
+            {
+              __config__: {
+                label: this.$t("generator.associatedProcess"),
+                custom: true,
+                checkedValue: null,
+                labelWidth: null,
+                showLabel: true,
+                changeTag: true,
+                tag: "el-input",
+                tagIcon: "AssociatedProcess",
+                defaultValue: null,
+                required: true,
+                layout: "colFormItem",
+                span: 20,
+                document: "https://element.eleme.cn/#/zh-CN/component/input",
+                // 正则校验规则
+                regList: [],
+              },
+              __vModel__: null,
+              // 组件的插槽属性
+              __slot__: {
+                prepend: "",
+                append: "",
+              },
+              // 其余的为可直接写在组件标签上的属性
+              placeholder: this.$t("generator.selectTip"),
+              style: { width: "100%" },
+              clearable: true,
+              "prefix-icon": "el-icon-search",
+              "suffix-icon": "",
+              maxlength: null,
+              readonly: true,
+              disabled: false,
+              singleChoice: false,
+              codeName: "", //码表名称
+              codeModel: "", //回显字段
+              codeType: "3", //查询方式
+              codeData: "", //请求参数
+              codeTableId: "",//
+              processType:'',
             }           
           ],
         },
@@ -682,32 +725,6 @@ export default {
               justify: "start",
               align: "top",
               tableType: "detailTable",
-            },
-            {
-              __config__: {
-                label: "按钮",
-                showLabel: true,
-                changeTag: true,
-                labelWidth: null,
-                tag: "el-button",
-                tagIcon: "Customcodetable",
-                defaultValue: undefined,
-                span: 12,
-                layout: "colFormItem",
-                buttonText:'www',
-                document: "https://element.eleme.cn/#/zh-CN/component/button",
-              },
-              __slot__: {
-                default: "",
-              },
-              type: "primary",
-              icon: "el-icon-search",
-              round: false,
-              size: "medium",
-              plain: false,
-              circle: false,
-              cFun: null,
-              disabled: false,
             },
           ],
         },

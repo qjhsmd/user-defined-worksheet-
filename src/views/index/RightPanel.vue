@@ -40,8 +40,18 @@
                             </el-option-group>
                         </el-select>
                     </el-form-item>
-                    <el-collapse v-model="activeNames" v-if="activeData.__config__.tagIcon === 'Customcodetable'">
+                    <el-collapse v-model="activeNames" v-if="activeData.__config__.tagIcon === 'Customcodetable' || activeData.__config__.tagIcon === 'AssociatedProcess'">
                         <el-collapse-item title="自定义查询" name="1">
+                            <el-form-item :label="$t('RightPanel.ProcessType')" v-if="activeData.__config__.tagIcon === 'AssociatedProcess'"
+                                required>
+                                <!-- @change="changeFieldcodeName"  :disabled="activeData.mandatory ? true : false"-->
+                                <el-select v-model="activeData.processType" :placeholder="$t('RightPanel.ProcessPlaceholder')"
+                                    :style="{ width: '100%' }" 
+                                    >
+                                    <el-option v-for="item in processOptions" :key="item.value" :label="item.label"
+                                        :value="item.value"></el-option>
+                                </el-select>
+                            </el-form-item>
                             <el-form-item :label="$t('RightPanel.Codetable')"
                                 required>
                                 <el-select v-model="activeData.codeName" :placeholder="$t('RightPanel.Pleaseselect')"
@@ -1112,6 +1122,7 @@ export default {
         "detailFields",
         "onlyDetail",
         "codeNameOptions",
+        "processOptions",
         "codeModelOptions",
         "codeDataOptions",
         "formData",
@@ -2292,6 +2303,46 @@ export default {
                                 changeTag: true,
                                 tag: 'el-input',
                                 tagIcon: 'Customcodetable',
+                                defaultValue: null,
+                                required: true,
+                                layout: 'colFormItem',
+                                span: 20,
+                                document: 'https://element.eleme.cn/#/zh-CN/component/input',
+                                // 正则校验规则
+                                regList: []
+                            },
+                            __vModel__: null,
+                            // 组件的插槽属性
+                            __slot__: {
+                                prepend: '',
+                                append: ''
+                            },
+                            // 其余的为可直接写在组件标签上的属性
+                            placeholder: this.$t('generator.selectTip'),
+                            style: { width: '100%' },
+                            clearable: true,
+                            'prefix-icon': 'el-icon-search',
+                            'suffix-icon': '',
+                            maxlength: null,
+                            readonly: true,
+                            disabled: false,
+                            singleChoice: false,
+                            codeName: '',//码表名称
+                            codeModel: '',//回显字段
+                            codeType: '3',//查询方式
+                            codeData: '',//请求参数
+                            codeTableId: ''
+                        },
+                        {
+                            __config__: {
+                                label: this.$t('generator.associatedProcess'),
+                                custom: true,
+                                checkedValue: null,
+                                labelWidth: null,
+                                showLabel: true,
+                                changeTag: true,
+                                tag: 'el-input',
+                                tagIcon: 'AssociatedProcess',
                                 defaultValue: null,
                                 required: true,
                                 layout: 'colFormItem',
