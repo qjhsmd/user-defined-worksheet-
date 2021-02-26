@@ -21,6 +21,7 @@ module.exports =  {
     tips:'Tips'
   },
   RightPanel:{
+    isReadonly:'Whether the read-only',
     formProperties:'Form Properties',
     ComponentProperties:'Component Properties',
     ComponentType:'Component type',

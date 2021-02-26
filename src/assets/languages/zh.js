@@ -22,6 +22,7 @@ module.exports =  {
 
   },
   RightPanel:{
+    isReadonly:'是否只读',
     formProperties:'表单属性',
     ComponentProperties:'组件属性',
     ComponentType:'组件类型',

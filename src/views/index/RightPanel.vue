@@ -94,7 +94,7 @@
                             <el-form-item  :label="$t('RightPanel.Isitrelated')" required>
                                 <el-switch v-model="activeData.isCodeName" @change="changeIsCodeName" active-color="#13ce66" inactive-color="#ff4949"></el-switch>
                             </el-form-item>
-                            <el-form-item v-if="activeData.__config__.tagIcon !== 'Customcodetable' && activeData.isCodeName" :label="$t('RightPanel.Associated')"
+                            <el-form-item v-if="activeData.__config__.tagIcon !== 'Customcodetable' && activeData.__config__.tagIcon !== 'AssociatedProcess' && activeData.isCodeName " :label="$t('RightPanel.Associated')"
                                 required>
                                 <el-select v-model="activeData.normalCodeName" :placeholder="$t('RightPanel.selectrequest')"
                                     :style="{ width: '100%' }" @change="changeNormalCodeName"
@@ -103,7 +103,7 @@
                                         :value="item.value"></el-option>
                                 </el-select>
                             </el-form-item>
-                            <el-form-item v-if="activeData.__config__.tagIcon !== 'Customcodetable' && activeData.isCodeName && activeData.normalCodeName !== ''" :label="$t('RightPanel.Echofields')"
+                            <el-form-item v-if="activeData.__config__.tagIcon !== 'Customcodetable' && activeData.__config__.tagIcon !== 'AssociatedProcess' && activeData.isCodeName && activeData.normalCodeName !== ''" :label="$t('RightPanel.Echofields')"
                                 required>
                                 <el-select v-model="activeData.normalCodeModel" :placeholder="$t('RightPanel.selectthe')"
                                     :style="{ width: '100%' }" @change="changeField"
@@ -884,6 +884,10 @@
                     <el-form-item v-if="
               activeData.__config__.showInput !== undefined" :label="$t('RightPanel.whetherShowInput')">
                         <el-switch v-model="activeData.__config__.showInput" />
+                    </el-form-item>
+                    <el-form-item v-if="
+              activeData.__config__.tagIcon === 'input' || activeData.__config__.tagIcon === 'textarea' || activeData.__config__.tagIcon === 'date'" :label="$t('RightPanel.isReadonly')">
+                        <el-switch v-model="activeData.readonly" />
                     </el-form-item>
 
                     <!-- <template v-if="activeData.__config__.layout === 'colFormItem'">
@@ -1763,6 +1767,46 @@ export default {
                     singleChoice: false,
                     codeTableId: ''
                 },
+                {
+                            __config__: {
+                                label: this.$t('generator.associatedProcess'),
+                                custom: true,
+                                checkedValue: null,
+                                labelWidth: null,
+                                showLabel: true,
+                                changeTag: true,
+                                tag: 'el-input',
+                                tagIcon: 'AssociatedProcess',
+                                defaultValue: null,
+                                required: true,
+                                layout: 'colFormItem',
+                                span: 20,
+                                document: 'https://element.eleme.cn/#/zh-CN/component/input',
+                                // 正则校验规则
+                                regList: []
+                            },
+                            __vModel__: null,
+                            // 组件的插槽属性
+                            __slot__: {
+                                prepend: '',
+                                append: ''
+                            },
+                            // 其余的为可直接写在组件标签上的属性
+                            placeholder: this.$t('generator.selectTip'),
+                            style: { width: '100%' },
+                            clearable: true,
+                            'prefix-icon': 'el-icon-search',
+                            'suffix-icon': '',
+                            maxlength: null,
+                            readonly: true,
+                            disabled: false,
+                            singleChoice: false,
+                            codeName: '',//码表名称
+                            codeModel: '',//回显字段
+                            codeType: '3',//查询方式
+                            codeData: '',//请求参数
+                            codeTableId: ''
+                        }
 
             ]
         },
