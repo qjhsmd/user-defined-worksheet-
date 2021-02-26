@@ -150,7 +150,7 @@ module.exports =  {
     Associateservice: 'Associate selected service',
     Associated:'Service selection',
     whetherShowInput:'Whether or not shown',
-    ProcessType:'Process Type',
+    processId:'Process List',
     ProcessPlaceholder:'Please select process',
   },
   CodeTypeDialog:{

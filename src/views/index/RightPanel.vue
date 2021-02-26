@@ -42,10 +42,10 @@
                     </el-form-item>
                     <el-collapse v-model="activeNames" v-if="activeData.__config__.tagIcon === 'Customcodetable' || activeData.__config__.tagIcon === 'AssociatedProcess'">
                         <el-collapse-item title="自定义查询" name="1">
-                            <el-form-item :label="$t('RightPanel.ProcessType')" v-if="activeData.__config__.tagIcon === 'AssociatedProcess'"
+                            <el-form-item :label="$t('RightPanel.processId')" v-if="activeData.__config__.tagIcon === 'AssociatedProcess'"
                                 required>
                                 <!-- @change="changeFieldcodeName"  :disabled="activeData.mandatory ? true : false"-->
-                                <el-select v-model="activeData.processType" :placeholder="$t('RightPanel.ProcessPlaceholder')"
+                                <el-select v-model="activeData.processId" :placeholder="$t('RightPanel.ProcessPlaceholder')"
                                     :style="{ width: '100%' }" 
                                     >
                                     <el-option v-for="item in processOptions" :key="item.value" :label="item.label"
@@ -88,7 +88,7 @@
                             </el-form-item>
                         </el-collapse-item>
                     </el-collapse>
-                    <el-collapse class="collapse-box" v-model="activeNames" v-if="activeData.__config__.tagIcon !== 'row' &&activeData.__config__.tagIcon !== 'custom' && activeData.__config__.tagIcon !== 'Customcodetable'">
+                    <el-collapse class="collapse-box" v-model="activeNames" v-if="activeData.__config__.tagIcon !== 'row' &&activeData.__config__.tagIcon !== 'custom' && activeData.__config__.tagIcon !== 'Customcodetable' && activeData.__config__.tagIcon !== 'AssociatedProcess'">
                         <el-collapse-item :title="$t('RightPanel.Associateservice')" name="1">
                             <!-- 普通栏位是否关联自定义码表 -->
                             <el-form-item  :label="$t('RightPanel.Isitrelated')" required>
@@ -2407,7 +2407,7 @@ export default {
                 this.codeModelArr = []
                 this.normalCodeModelOptions = []
                 this.normalCodeNameOptions = []
-                if(val.__config__.tagIcon == "Customcodetable") {
+                if(val.__config__.tagIcon == "Customcodetable" ||val.__config__.tagIcon == "AssociatedProcess" ) {
                     if(val.hasOwnProperty("codeName")) {
                         let e = val.codeName;
                         if(e == '') return
@@ -2496,7 +2496,7 @@ export default {
                     if(this.activeData.parentID == element.__config__.componentName) {
                         for (let i = 0; i < element.__config__.children.length; i++) {
                             const con = element.__config__.children[i];
-                            if(con.__config__.tagIcon == "Customcodetable") {
+                            if(con.__config__.tagIcon == "Customcodetable" || con.__config__.tagIcon == 'AssociatedProcess') {
                                 if(con.__vModel__!== '' && con.codeName !== '') {
                                     let arr = this.onlyDetail.filter((value, index, arr) => {
                                     　　　return value.value == con.__vModel__
@@ -2533,7 +2533,7 @@ export default {
                     if(element.__config__.hasOwnProperty('children')) {
 
                     } else {
-                        if(element.__config__.tagIcon == "Customcodetable") {
+                        if(element.__config__.tagIcon == "Customcodetable" || element.__config__.tagIcon == 'AssociatedProcess') {
                             if(element.__vModel__!== '' && element.codeName !== '') {
                                 let arr = this.options.filter((value, index, arr) => {
                                 　　　return value.value == element.__vModel__

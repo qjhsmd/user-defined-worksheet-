@@ -705,7 +705,7 @@ export default {
               codeType: "3", //查询方式
               codeData: "", //请求参数
               codeTableId: "",//
-              processType:'',
+              processId:'',
             }           
           ],
         },
@@ -941,6 +941,7 @@ export default {
       }
     },
     getDetailValue() {
+      console.log('sssAS')
       var res = {};
       let url = this.baseUrl + this.activeData.parentCode;
       let _this = this;
@@ -999,6 +1000,7 @@ export default {
       return regList;
     },
     activeFormItem(element) {
+      console.log(element)
       this.activeData = element;
       this.activeId = element.__config__.formId;
     },

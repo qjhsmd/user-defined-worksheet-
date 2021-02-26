@@ -174,7 +174,7 @@ export default {
       this.$emit("funcChange", data, model, value ,codetype);
     },
     doSomething2(data, model, value,codetype) {
-      if(codetype.__config__.tagIcon == 'Customcodetable') {
+      if(codetype.__config__.tagIcon == 'Customcodetable' || codetype.__config__.tagIcon === 'AssociatedProcess') {
         this.$emit("func", data, model, value ,codetype, 1);
       } else if(codetype.__config__.tagIcon == 'custom') {
         this.$emit("func", data, model, value ,codetype, 1);
