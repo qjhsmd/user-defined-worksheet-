@@ -1000,9 +1000,13 @@ export default {
       return regList;
     },
     activeFormItem(element) {
-      console.log(element)
+      // console.log(element)
       this.activeData = element;
       this.activeId = element.__config__.formId;
+      this.rightPanel = false;// 切换组件的事实 更新右侧组件
+            this.$nextTick(() => {
+              this.rightPanel = true;
+            });
     },
     onEnd(obj) {
       if (obj.from !== obj.to) {

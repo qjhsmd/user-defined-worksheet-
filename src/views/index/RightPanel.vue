@@ -2827,7 +2827,20 @@ export default {
             this.activeData.__config__.renderKey = +new Date();
         }
     },
-    mounted() {}
+    mounted() {
+        if(this.activeData.__config__.regList.length>0){// 如果之前选择了验证规则  再次切换回来进行回写
+        this.activeData.__config__.regList.forEach((item)=>{
+           this.regularChoise.forEach((li)=>{
+               if(li.message == item.message){
+                   this.customMsg = li.message
+                   this.regList = li.value
+                   this.customList =li.value
+                   this.regLabel = li.label
+               }
+        })
+        })
+        }
+    }
 };
 </script>
 <style lang="scss">
