@@ -219,7 +219,7 @@
             activeData.__vModel__ !== undefined &&
               activeData.__config__.tagIcon == 'input'
             " :label="$t('RightPanel.VarDefaultValue')">
-                        <el-select v-model="activeData.variableCOn" :placeholder="$t('RightPanel.VarDefaultValueTip')"
+                        <el-select v-model="activeData.variableCOn" clearable :placeholder="$t('RightPanel.VarDefaultValueTip')"
                             :style="{ width: '100%' }">
                             <el-option v-for="(item, index) in optionsChoise" :key="index" :label="item.label"
                                 :value="item.value" />
@@ -249,7 +249,7 @@
                     <el-form-item v-if="
                 activeData.__config__.tagIcon == 'date'
             " :label="$t('RightPanel.VarDefaultValue')">
-                        <el-select v-model="activeData.variableDate" :placeholder="$t('RightPanel.VarDefaultValueTip')"
+                        <el-select v-model="activeData.variableDate" clearable :placeholder="$t('RightPanel.VarDefaultValueTip')"
                             :style="{ width: '100%' }" @change="variableDateChange">
                             <el-option v-for="(item, index) in dataOptions" :key="index" :label="item.label"
                                 :value="item.value" />
@@ -261,7 +261,7 @@
             activeData.__vModel__ !== undefined &&
             activeData.__config__.tagIcon == 'input'
             " :label="$t('RightPanel.VerificationRules')">
-                        <el-select v-model="regList" :placeholder="$t('RightPanel.VerificationRulestip')"
+                        <el-select v-model="regList" clearable @clear="clearReg" :placeholder="$t('RightPanel.VerificationRulestip')"
                             :style="{ width: '100%' }" @change="addReg">
                             <el-option v-for="(item, index) in regularChoise" :key="index" :label="item.label"
                                 :value="item.value" />
@@ -2629,6 +2629,12 @@ export default {
                 }
             }
 
+        },
+        clearReg(){ // 清空选择的正则表达式
+                   this.regLabel = ''
+                    this.customList = ''
+                    this.customMsg = ''
+                    this.activeData.__config__.regList=[];
         },
         changeField(value) {
             this.$emit("changeField", value);
