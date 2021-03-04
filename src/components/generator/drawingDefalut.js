@@ -39,6 +39,7 @@ export default [
     maxlength: 11,
     'show-word-limit': true,
     readonly: false,
-    disabled: false
+    disabled: false,
+    isFormat: false,
   }
 ]

@@ -263,6 +263,7 @@ export default {
               "show-word-limit": false,
               readonly: false,
               disabled: false,
+              isFormat: false,
             },
             {
               __config__: {
@@ -768,6 +769,7 @@ export default {
           "show-word-limit": true,
           readonly: false,
           disabled: false,
+          isFormat: false,
         },
       ];
     },
@@ -815,6 +817,7 @@ export default {
           "show-word-limit": true,
           readonly: false,
           disabled: false,
+          isFormat: false,
         },
       ],
       idGlobal,

@@ -150,6 +150,7 @@ module.exports =  {
     Associateservice:'是否关联已选择服务',
     Associated:'服务选择',
     whetherShowInput:'是否显示',
+    isFormat:'是否格式化',
     processId:'流程列表',
     ProcessPlaceholder:'请选择流程',
   },

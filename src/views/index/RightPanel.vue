@@ -885,6 +885,11 @@
               activeData.__config__.showInput !== undefined" :label="$t('RightPanel.whetherShowInput')">
                         <el-switch v-model="activeData.__config__.showInput" />
                     </el-form-item>
+                    <!-- add amountFormat switch by maikangzhi -->
+                    <el-form-item v-if="
+              activeData.isFormat !== undefined &&activeData.__config__.regList.length>0 && '/(^[1-9]([0-9]+)?(.[0-9]{1,2})?$)|(^(0){1}$)|(^[0-9].[0-9]([0-9])?$)/' === activeData.__config__.regList[0]['pattern']" :label="$t('RightPanel.isFormat')">
+                        <el-switch v-model="activeData.isFormat" />
+                    </el-form-item>
                     <el-form-item v-if="
               activeData.__config__.tagIcon === 'input' || activeData.__config__.tagIcon === 'textarea' || activeData.__config__.tagIcon === 'date'" :label="$t('RightPanel.isReadonly')">
                         <el-switch v-model="activeData.readonly" />
@@ -1846,6 +1851,7 @@ export default {
                     'show-word-limit': false,
                     readonly: false,
                     disabled: false,
+                    isFormat: false,
                 },
                 {
                     __config__: {
@@ -2626,6 +2632,9 @@ export default {
                         pattern: i.value,
                         message: i.message
                     };
+                    if(i.value !='/(^[1-9]([0-9]+)?(\.[0-9]{1,2})?$)|(^(0){1}$)|(^[0-9]\.[0-9]([0-9])?$)/'){
+                        this.activeData.isFormat = false;
+                    }
                 }
             }
 
@@ -2635,6 +2644,7 @@ export default {
                     this.customList = ''
                     this.customMsg = ''
                     this.activeData.__config__.regList=[];
+                    this.activeData.isFormat = false;
         },
         changeField(value) {
             this.$emit("changeField", value);

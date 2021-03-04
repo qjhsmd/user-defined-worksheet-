@@ -153,8 +153,21 @@ export default {
       [this.formConf.formModel]: {},
       [this.formConf.formRules]: {}
     }
+    //amount format
+    if(data.formConfCopy){
+      data.formConfCopy.fields.forEach((val,i,arr) => {
+        val.__config__.regList.forEach((val2,index2,arr2) =>{
+          if(val.isFormat){
+            let v = this.amountFormat(val.__config__.defaultValue);
+            val.__config__.defaultValue = v;
+          }
+        });
+      });
+    }
     this.initFormData(data.formConfCopy.fields, data[this.formConf.formModel])
     this.buildRules(data.formConfCopy.fields, data[this.formConf.formRules])
+
+    
     return data
   },
   methods: {
@@ -243,7 +256,28 @@ export default {
         this.$emit('submit', this[this.formConf.formModel])
         return true
       })
-    }
+    },
+    amountFormat(value) {
+      if (!value && value !== 0) return '';
+      let intPart = Number(value) | 0; //获取整数部分
+      let intPartFormat = intPart.toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,'); //将整数部分逢三一断
+  
+      let floatPart = ".00"; //预定义小数部分
+      let value2Array = value.toString().split(".");
+  
+      //=2表示数据有小数位
+      if (value2Array.length == 2) {
+          floatPart = value2Array[1].toString(); //拿到小数部分
+  
+          if (floatPart.length == 1) { //补0,实际上用不着
+              return intPartFormat + "." + floatPart + '0';
+          } else {
+              return intPartFormat + "." + floatPart;
+          }
+      } else {
+          return intPartFormat + floatPart;
+      }
+    },
   },
   render(h) {
     return renderFrom.call(this, h)

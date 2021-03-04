@@ -151,6 +151,7 @@ module.exports =  {
     Associateservice: 'Associate selected service',
     Associated:'Service selection',
     whetherShowInput:'Whether or not shown',
+    isFormat:'Whether or not format',
     processId:'Process List',
     ProcessPlaceholder:'Please select process',
   },
