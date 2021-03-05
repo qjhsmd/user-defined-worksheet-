@@ -1084,6 +1084,7 @@ export default {
               res.__config__.regList = de.regList;
               res.maxlength = de.maxlength;
               res.fieldType = de.fieldType;
+              res.isFormat = false;
               let index = de.label.lastIndexOf("-");
               res.__config__.label = de.label.substring(
                 index + 1,

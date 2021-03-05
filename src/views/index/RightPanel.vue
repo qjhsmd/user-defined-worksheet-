@@ -2632,7 +2632,7 @@ export default {
                         pattern: i.value,
                         message: i.message
                     };
-                    if(i.value !='/(^[1-9]([0-9]+)?(\.[0-9]{1,2})?$)|(^(0){1}$)|(^[0-9]\.[0-9]([0-9])?$)/'){
+                    if(this.activeData.isFormat === undefined || i.value !='/(^[1-9]([0-9]+)?(\.[0-9]{1,2})?$)|(^(0){1}$)|(^[0-9]\.[0-9]([0-9])?$)/'){
                         this.activeData.isFormat = false;
                     }
                 }
