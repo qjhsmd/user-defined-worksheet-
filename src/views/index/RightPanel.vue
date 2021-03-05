@@ -2449,37 +2449,35 @@ export default {
                 saveFormConf(val);
             },
             deep: true
-        },
-        activeData: {
-            handler(val) {
-                this.allObj = {}
-                this.codeDataArr = []
-                this.codeModelArr = []
-                this.normalCodeModelOptions = []
-                this.normalCodeNameOptions = []
-                if(val.__config__.tagIcon == "Customcodetable" ||val.__config__.tagIcon == "AssociatedProcess" ) {
-                    if(val.hasOwnProperty("codeName")) {
-                        let e = val.codeName;
-                        if(e == '') return
-                        this.codeModelArr = this.codeModelOptions[e];
-                        this.codeDataArr = this.codeDataOptions[e];
-                        if(this.allObj.hasOwnProperty(val.__vModel__)) return
-                        this.allObj[val.__vModel__] = this.codeModelOptions[e];
-                    }
-                } else {
-                    if(val.hasOwnProperty('isCodeName')) {
-                        if(val.isCodeName) {
-                            this.changeIsCodeName()
-                        }
-                        if(val.normalCodeName) {
-                            this.normalCodeModelOptions = this.allObj[val.normalCodeName]
-                        }
-                    }
-                }
-            }
         }
     },
     methods: {
+        initActiveData(val){
+            this.allObj = {}
+            this.codeDataArr = []
+            this.codeModelArr = []
+            this.normalCodeModelOptions = []
+            this.normalCodeNameOptions = []
+            if(val.__config__.tagIcon == "Customcodetable" ||val.__config__.tagIcon == "AssociatedProcess" ) {
+                if(val.hasOwnProperty("codeName")) {
+                    let e = val.codeName;
+                    if(e == '') return
+                    this.codeModelArr = this.codeModelOptions[e];
+                    this.codeDataArr = this.codeDataOptions[e];
+                    if(this.allObj.hasOwnProperty(val.__vModel__)) return
+                    this.allObj[val.__vModel__] = this.codeModelOptions[e];
+                }
+            } else {
+                if(val.hasOwnProperty('isCodeName')) {
+                    if(val.isCodeName) {
+                        this.changeIsCodeName()
+                    }
+                    if(val.normalCodeName) {
+                        this.normalCodeModelOptions = this.allObj[val.normalCodeName]
+                    }
+                }
+            }
+        },
         exampleShow() {
             this.dialogVisibleExample = true
         },
@@ -2844,6 +2842,8 @@ export default {
         }
     },
     mounted() {
+
+        this.initActiveData(this.activeData);
         if(this.activeData.__config__.regList.length>0){// 如果之前选择了验证规则  再次切换回来进行回写
         this.activeData.__config__.regList.forEach((item)=>{
            this.regularChoise.forEach((li)=>{
