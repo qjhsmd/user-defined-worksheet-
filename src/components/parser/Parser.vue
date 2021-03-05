@@ -154,16 +154,7 @@ export default {
       [this.formConf.formRules]: {}
     }
     //amount format
-    if(data.formConfCopy){
-      data.formConfCopy.fields.forEach((val,i,arr) => {
-        val.__config__.regList.forEach((val2,index2,arr2) =>{
-          if(val.isFormat){
-            let v = this.amountFormat(val.__config__.defaultValue);
-            val.__config__.defaultValue = v;
-          }
-        });
-      });
-    }
+    this.initAmountFormat(data.formConfCopy.fields);
     this.initFormData(data.formConfCopy.fields, data[this.formConf.formModel])
     this.buildRules(data.formConfCopy.fields, data[this.formConf.formRules])
 
@@ -215,6 +206,20 @@ export default {
         //     }
         // });
       }
+    },
+    initAmountFormat(data) {
+      data && data.forEach((val,i,arr) => {
+          if(val.__config__.children){
+            this.initAmountFormat(val.__config__.children);
+          }
+          if(val.isFormat === undefined){
+            val.isFormat = false;
+          }
+          if(val.disabled && val.isFormat){
+            let v = this.amountFormat(val.__config__.defaultValue);
+            val.__config__.defaultValue = v;
+          }
+      });
     },
     initFormData(componentList, formData) {
       componentList.forEach(cur => {
