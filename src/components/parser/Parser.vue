@@ -218,6 +218,7 @@ export default {
           if(val.disabled && val.isFormat){
             let v = this.amountFormat(val.__config__.defaultValue);
             val.__config__.defaultValue = v;
+            val.__config__.regList = [];
           }
       });
     },
