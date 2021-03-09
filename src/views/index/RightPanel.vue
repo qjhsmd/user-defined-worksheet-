@@ -890,9 +890,13 @@
               activeData.isFormat !== undefined &&activeData.__config__.regList.length>0 && '/(^[1-9]([0-9]+)?(.[0-9]{1,2})?$)|(^(0){1}$)|(^[0-9].[0-9]([0-9])?$)/' === activeData.__config__.regList[0]['pattern']" :label="$t('RightPanel.isFormat')">
                         <el-switch v-model="activeData.isFormat" />
                     </el-form-item>
+                   
                     <el-form-item v-if="
-              activeData.__config__.tagIcon === 'input' || activeData.__config__.tagIcon === 'textarea' || activeData.__config__.tagIcon === 'date'" :label="$t('RightPanel.isReadonly')">
+              activeData.__config__.tagIcon === 'input' || activeData.__config__.tagIcon === 'textarea' || activeData.__config__.tagIcon === 'date' "  :label="$t('RightPanel.isReadonly')">
                         <el-switch v-model="activeData.readonly" />
+                    </el-form-item>
+                    <el-form-item v-if=" activeData.__config__.tagIcon === 'select' "  :label="$t('RightPanel.isReadonly')">
+                        <el-switch v-model="activeData.disabled" />
                     </el-form-item>
 
                     <!-- <template v-if="activeData.__config__.layout === 'colFormItem'">
