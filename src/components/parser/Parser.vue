@@ -259,6 +259,13 @@ export default {
       this.$refs[this.formConf.formRef].validate(valid => {
         if (!valid) return false
         // 触发sumit事件
+        let arr =[]
+        for (let i in this[this.formConf.formModel]) {
+                  arr = i.split('-');             
+                            }
+        if(this[this.formConf.formModel][arr[0]+'-BL'] == 1){
+            this[this.formConf.formModel][arr[0]+'-BUSI_NAME'] = this[this.formConf.formModel][arr[0]+'-BUSI_NAME']+'('+this.$t('initiateApplicationPage.BackTracking')+')'
+        }
         this.$emit('submit', this[this.formConf.formModel])
         return true
       })
