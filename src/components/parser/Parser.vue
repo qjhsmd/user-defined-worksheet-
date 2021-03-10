@@ -1,6 +1,7 @@
 <script>
 import { deepClone } from '@/utils/index'
 import render from '@/components/render/render.js'
+import Vue from 'vue'
 const ruleTrigger = {
   'el-input': 'blur',
   'el-input-number': 'blur',
@@ -100,7 +101,30 @@ function buildListeners(scheme) {
   })
   // 响应 render.js 中的 vModel $emit('input', val)
   listeners.input = event => {
+    //将输入的金额格式化.
+    let active = null;
+    let isAmount = false;
+    let end = null;
+    let preventVal = event;
+    if(this.formatAmounts.includes(scheme.__vModel__)){
+      active = document.activeElement;
+      end = (active && active.selectionEnd) | 0;
+      isAmount = true;
+      event = this.amountFormat(event,'input');
+    }
     setValue.call(this, event, config, scheme)
+
+    if(isAmount){
+      this.$nextTick(() => {
+        let newLen = event.length - preventVal.length;
+        if(newLen === 1)  end = end+1;
+        if(newLen === -1) end = end-1;
+        if(active && active.tagName == 'INPUT'){  
+          active.setSelectionRange&&active.setSelectionRange(end,end);
+        }
+      });
+      isAmount =false;
+    }
     this.doSomethingInput(
       event,
       scheme.__vModel__,
@@ -151,10 +175,11 @@ export default {
     const data = {
       formConfCopy: deepClone(this.formConf),
       [this.formConf.formModel]: {},
-      [this.formConf.formRules]: {}
+      [this.formConf.formRules]: {},
+      formatAmounts: [] //保存格式化金额的字段,在提交的时,去掉千位符.
     }
     //amount format
-    this.initAmountFormat(data.formConfCopy.fields);
+    this.initAmountFormat(data.formConfCopy.fields,data.formatAmounts);
     this.initFormData(data.formConfCopy.fields, data[this.formConf.formModel])
     this.buildRules(data.formConfCopy.fields, data[this.formConf.formRules])
 
@@ -207,7 +232,7 @@ export default {
         // });
       }
     },
-    initAmountFormat(data) {
+    initAmountFormat(data,amounts) {
       data && data.forEach((val,i,arr) => {
           if(val.__config__.children){
             this.initAmountFormat(val.__config__.children);
@@ -215,10 +240,20 @@ export default {
           if(val.isFormat === undefined){
             val.isFormat = false;
           }
-          if(val.disabled && val.isFormat){
-            let v = this.amountFormat(val.__config__.defaultValue);
+          if(val.isFormat){
+            let v = this.amountFormat(val.__config__.defaultValue,'show');
             val.__config__.defaultValue = v;
-            val.__config__.regList = [];
+            //如果是不可编辑的,清空验证,否则加千位符金额验证.
+            if(val.disabled){
+              val.__config__.regList = [];
+            }else{
+              amounts.push(val.__vModel__);
+              let conf = val.__config__.regList[0];
+              val.__config__.regList = [{
+                message: conf.message,
+                pattern: '/^(([1-9][0-9]{0,2}(,\\d{3})*)|0)(\.\\d{1,2})?$/'
+              }];
+            }
           }
       });
     },
@@ -258,6 +293,11 @@ export default {
     submitForm() {
       this.$refs[this.formConf.formRef].validate(valid => {
         if (!valid) return false
+        //还原金额格式
+        this.formatAmounts.forEach((v) =>{
+          let amount = this[this.formConf.formModel][v];
+          amount && (this[this.formConf.formModel][v] = amount.replace(/,/g,''));
+        });
         // 触发sumit事件
         let arr =[]
         for (let i in this[this.formConf.formModel]) {
@@ -270,18 +310,30 @@ export default {
         return true
       })
     },
-    amountFormat(value) {
-      if (!value && value !== 0) return '';
-      let intPart = Number(value) | 0; //获取整数部分
+    amountFormat(amount,type) { 
+      
+      let value = String(amount).replace(/,/g,'');
+      let intREG = /^[0-9]+(\.\d{1,2})*$/g;
+      if (!intREG.test(value)) return amount;
+      let intPart = value.toString().split('.')[0] //获取整数部分
       let intPartFormat = intPart.toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,'); //将整数部分逢三一断
   
       let floatPart = ".00"; //预定义小数部分
       let value2Array = value.toString().split(".");
-  
+
       //=2表示数据有小数位
+      if(type === 'input'){
+        let float = '';
+        if (value2Array.length > 1) {
+          float = '.'+value2Array[1].toString();
+        }
+        return intPartFormat+float;
+      }
       if (value2Array.length == 2) {
           floatPart = value2Array[1].toString(); //拿到小数部分
-  
+          if(floatPart.length >2){
+            return amount;
+          }
           if (floatPart.length == 1) { //补0,实际上用不着
               return intPartFormat + "." + floatPart + '0';
           } else {
