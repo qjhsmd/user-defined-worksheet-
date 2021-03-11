@@ -251,7 +251,7 @@ export default {
               let conf = val.__config__.regList[0];
               val.__config__.regList = [{
                 message: conf.message,
-                pattern: '/^(([1-9][0-9]{0,2}(,\\d{3})*)|0)(\.\\d{1,2})?$/'
+                pattern: '/^(([1-9][0-9]{0,2}(,\\d{3})*)|0)+(\.\\d{1,2})?$/'
               }];
             }
           }
@@ -315,6 +315,9 @@ export default {
       let value = String(amount).replace(/,/g,'');
       let intREG = /^[0-9]+(\.\d{1,2})*$/g;
       if (!intREG.test(value)) return amount;
+      if(value.startsWith('0') && value.length>1 && !value.startsWith('0.')){
+        value = value.replace(/^0(?=\\d)*/,'');
+      }
       let intPart = value.toString().split('.')[0] //获取整数部分
       let intPartFormat = intPart.toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,'); //将整数部分逢三一断
   
