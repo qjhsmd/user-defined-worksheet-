@@ -117,6 +117,8 @@
         :codeModelOptions="codeModelOptions"
         :codeNameOptions="codeNameOptions"
         :processOptions="processOptions"
+        :optionTypeArr="optionTypeArr"
+        :optionDataArr="optionDataArr"
         :options="fieldName"
         :clickName="clickName"
         :codeList="codeList"
@@ -220,6 +222,8 @@ export default {
     "token",
     "codeNameOptions",
     "processOptions",
+    "optionTypeArr",
+    "optionDataArr",
     "codeModelOptions",
     "codeDataOptions",
   ],
@@ -311,6 +315,7 @@ export default {
                 required: true,
                 regList: [],
                 changeTag: true,
+                selectArrType:'',
                 document: "https://element.eleme.cn/#/zh-CN/component/select",
               },
               __vModel__: null,
@@ -395,6 +400,7 @@ export default {
                 regList: [],
                 required: true,
                 border: false,
+                selectArrType:'',
                 document: "https://element.eleme.cn/#/zh-CN/component/radio",
               },
 
@@ -430,6 +436,7 @@ export default {
                 regList: [],
                 changeTag: true,
                 border: false,
+                selectArrType:'',
                 document: "https://element.eleme.cn/#/zh-CN/component/checkbox",
               },
               __vModel__: null,
