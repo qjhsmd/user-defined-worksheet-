@@ -50,7 +50,7 @@
                 </el-button> -->
 
         <el-button icon="el-icon-view" type="text" @click="showJson">
-          查看json
+          {{$t('RightPanel.lookJson')}}
         </el-button>
         <!-- <el-button icon="el-icon-download" type="text" @click="download">
           导出vue文件

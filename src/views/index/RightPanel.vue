@@ -3,17 +3,9 @@
         <el-tabs v-model="currentTab" class="center-tabs">
             <el-tab-pane :label="$t('RightPanel.formProperties')" name="form" />
             <el-tab-pane :label="$t('RightPanel.ComponentProperties')" name="field" />
-            <el-tab-pane label="组件事件" name="fieldFun" />
+            <el-tab-pane :label="$t('RightPanel.componentEvents')" name="fieldFun" />
         </el-tabs>
         <div class="field-box">
-            <!-- <a
-        class="document-link"
-        target="_blank"
-        :href="documentLink"
-        title="查看组件文档"
-      >
-        <i class="el-icon-link" />
-      </a> -->
             <el-scrollbar class="right-scrollbar">
                 <!-- 组件属性 -->
                 <el-form v-show="currentTab === 'field' && showField" size="small" label-width="90px">
@@ -995,7 +987,7 @@
                 </el-form>
                 <!-- 组件事件 -->
                 <el-form v-show="currentTab === 'fieldFun'" size="small" label-width="120px">
-                    <el-form-item label="事件类型" required>
+                    <el-form-item :label="$t('RightPanel.eventType')" required>
                         <el-select v-model="activeData.event" :placeholder="$t('RightPanel.selectTip')"
                             :style="{ width: '100%' }" @change="changeFieldFun">
                             <el-option v-for="item in funoptions" :key="item.value" :label="item.label"
@@ -1006,7 +998,7 @@
                     <el-form-item required>
                         <span slot="label">
                             <span class="span-box">
-                                <span>事件响应</span>
+                                <span>{{$t('RightPanel.eventResponse')}}</span>
                                 <i class="el-icon-warning-outline ico-pre" @click="exampleShow"></i>
                                 <!-- <el-tooltip class="item" effect="light" placement="bottom">
                                     <div slot="content">
@@ -1023,7 +1015,7 @@
                     <el-form-item required>
                         <span slot="label">
                             <span class="span-box">
-                                <span>移动事件响应</span>
+                                <span>{{$t('RightPanel.mobileEventResponse')}}</span>
                                 <i class="el-icon-warning-outline ico-pre" @click="exampleShow"></i>
                                 <!-- <el-tooltip class="item" effect="light" placement="bottom">
                                     <div slot="content">
@@ -1046,7 +1038,7 @@
                                 :value="item.value"></el-option>
                         </el-select>
                     </el-form-item>
-                    <el-form-item v-else label="字段查询">
+                    <el-form-item v-else :label="$t('RightPanel.fieldQuery')">
                         <el-select v-model="onlyShow" :placeholder="$t('RightPanel.selectTip')"
                             :style="{ width: '100%' }"  @change="checkFieldModel"
                             :disabled="activeData.mandatory ? true : false">
@@ -1054,7 +1046,7 @@
                                 :value="item.value"></el-option>
                         </el-select>
                     </el-form-item>
-                    <el-form-item label="字段展示">
+                    <el-form-item :label="$t('RightPanel.fieldShow')">
                         <div>{{onlyShow}}</div>
                     </el-form-item>
                 </el-form>

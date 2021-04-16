@@ -21,6 +21,7 @@ module.exports =  {
     tips:'Tips'
   },
   RightPanel:{
+    lookJson:'Look at the json',
     isReadonly:'Whether the read-only',
     formProperties:'Form Properties',
     ComponentProperties:'Component Properties',
@@ -154,6 +155,12 @@ module.exports =  {
     isFormat:'Whether or not format',
     processId:'Process List',
     ProcessPlaceholder:'Please select process',
+    componentEvents:'Component events',
+    eventType:'Event type',
+    eventResponse:'Event response',
+    mobileEventResponse:'Mobile event response',
+    fieldQuery:'Field query',
+    fieldShow:'Field show',
   },
   CodeTypeDialog:{
     GenerationType:'Generation Type',

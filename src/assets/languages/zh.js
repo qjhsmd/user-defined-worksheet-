@@ -22,6 +22,7 @@ module.exports =  {
 
   },
   RightPanel:{
+    lookJson:'查看json',
     isReadonly:'是否只读',
     formProperties:'表单属性',
     ComponentProperties:'组件属性',
@@ -153,6 +154,12 @@ module.exports =  {
     isFormat:'是否格式化',
     processId:'流程列表',
     ProcessPlaceholder:'请选择流程',
+    componentEvents:'组件事件',
+    eventType :'事件类型',
+    eventResponse:'事件响应',
+    mobileEventResponse:'移动事件响应',
+    fieldQuery:'字段查询',
+    fieldShow:'字段展示',
   },
   FormDrawer:{
     ResourceReference:'资源引用',

@@ -65,6 +65,11 @@ textarea {
   .el-tabs__item {
     width: 33%;
     text-align: center;
+    white-space: normal;
+    line-height: 18px;
+    height:auto;
+    line-height: normal;
+    padding-bottom: 10px;
   }
   .el-tabs__nav {
     width: 100%;
