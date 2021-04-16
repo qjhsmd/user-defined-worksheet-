@@ -291,6 +291,32 @@ export default {
       this.$refs[this.formConf.formRef].resetFields()
     },
     submitForm() {
+      // 如果 有 请款的 申请金额字段 并且加了验证 
+       let sqjeName = sessionStorage.getItem('sqjeName');
+       let kyjeName = sessionStorage.getItem('kyjeName');
+       let m = 0;
+       for (let i in this.formData) {
+                              if (sqjeName === i) {
+                                  m =10
+                              }
+        }
+      
+      if(sqjeName && m ==10){
+        this.rules[sqjeName].push(
+                {
+                  validator: (rule, val, callback) => {
+                    if (Number(val&&val.toString().replace(/,/g,'')) > Number(this.formData[kyjeName]&& this.formData[kyjeName].toString().replace(/,/g,''))) {
+                      callback(new Error(this.$t('initiateApplicationPage.amountPattern1')))
+                    } else {
+                      callback()
+                    }
+                  },
+                  trigger: 'change',
+                  required: true
+                }
+              )
+      }
+      
       this.$refs[this.formConf.formRef].validate(valid => {
         if (!valid) return false
         //还原金额格式
@@ -307,6 +333,11 @@ export default {
             this[this.formConf.formModel][arr[0]+'-BUSI_NAME'] = this[this.formConf.formModel][arr[0]+'-BUSI_NAME']+'('+this.$t('initiateApplicationPage.BackTracking')+')'
         }
         this.$emit('submit', this[this.formConf.formModel])
+        // if(sqjeName && m ==10){
+        // // 再删除 可用金额相关数据  后来感觉还是不删除比较好
+        // sessionStorage.removeItem('sqjeName')
+        // sessionStorage.removeItem('kyjeName')
+        // }
         return true
       })
     },

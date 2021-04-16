@@ -636,9 +636,16 @@
                 activeData.__config__.tag
               ) > -1
             ">
+            <el-form-item
+                         :label="$t('RightPanel.dataType')">
+                        <el-select  v-model="activeData.__config__.selectArrType" @change="selectArrTypeChange">
+                            <el-option v-for="item in optionTypeArr" :key="item.optionType" :label="item.des"
+                                        :value="item.optionType"></el-option>
+                        </el-select>
+                    </el-form-item>
                         <el-divider>{{$t('RightPanel.option')}}</el-divider>
-                        <draggable :list="activeData.__slot__.options" :animation="340" group="selectItem"
-                            handle=".option-drag">
+                        <!-- <draggable :list="activeData.__slot__.options" :animation="340" group="selectItem"
+                            handle=".option-drag"> -->
                             <div v-for="(item, index) in activeData.__slot__.options" :key="index" class="select-item">
                                 <div class="select-line-icon option-drag">
                                     <i class="el-icon-s-operation" />
@@ -647,16 +654,16 @@
                                     size="small" />
                                 <el-input :placeholder="$t('RightPanel.OptionValue')" size="small" :value="item.value"
                                     @input="setOptionValue(item, $event)" />
-                                <div class="close-btn select-line-icon"
+                                <!-- <div class="close-btn select-line-icon"
                                     @click="activeData.__slot__.options.splice(index, 1)">
                                     <i class="el-icon-remove-outline" />
-                                </div>
+                                </div> -->
                             </div>
-                        </draggable>
-                        <div style="margin-left: 20px;">
+                        <!-- </draggable> -->
+                        <!-- <div style="margin-left: 20px;">
                             <el-button style="padding-bottom: 0" icon="el-icon-circle-plus-outline" type="text"
                                 @click="addSelectItem">{{$t('RightPanel.AddOptions')}}</el-button>
-                        </div>
+                        </div> -->
                         <el-divider />
                     </template>
 
@@ -1136,6 +1143,8 @@ export default {
         "onlyDetail",
         "codeNameOptions",
         "processOptions",
+        "optionTypeArr",
+        "optionDataArr",
         "codeModelOptions",
         "codeDataOptions",
         "formData",
@@ -1369,6 +1378,7 @@ export default {
                         required: true,
                         regList: [],
                         changeTag: true,
+                        selectArrType:'',
                         document: 'https://element.eleme.cn/#/zh-CN/component/select'
                     },
                     __vModel__: null,
@@ -1446,6 +1456,7 @@ export default {
                         regList: [],
                         required: true,
                         border: false,
+                        selectArrType:'',
                         document: 'https://element.eleme.cn/#/zh-CN/component/radio'
                     },
 
@@ -1478,6 +1489,7 @@ export default {
                         regList: [],
                         changeTag: true,
                         border: false,
+                        selectArrType:'',
                         document: 'https://element.eleme.cn/#/zh-CN/component/checkbox'
                     },
                     __vModel__: null,
@@ -2024,6 +2036,7 @@ export default {
                                 required: true,
                                 regList: [],
                                 changeTag: true,
+                                selectArrType:'',
                                 document: 'https://element.eleme.cn/#/zh-CN/component/select'
                             },
                             __vModel__: null,
@@ -2101,6 +2114,7 @@ export default {
                                 regList: [],
                                 required: true,
                                 border: false,
+                                selectArrType:'',
                                 document: 'https://element.eleme.cn/#/zh-CN/component/radio'
                             },
 
@@ -2133,6 +2147,7 @@ export default {
                                 regList: [],
                                 changeTag: true,
                                 border: false,
+                                selectArrType:'',
                                 document: 'https://element.eleme.cn/#/zh-CN/component/checkbox'
                             },
                             __vModel__: null,
@@ -2843,11 +2858,28 @@ export default {
         },
         changeRenderKey() {
             this.activeData.__config__.renderKey = +new Date();
+        },
+        selectArrTypeChange(){// 选择数据类型显示数据
+          this.activeData.__slot__.options = []
+          this.optionDataArr.forEach((item)=>{
+               if(item.optionType === this.activeData.__config__.selectArrType){
+                   this.activeData.__slot__.options.push({label:item.optionName,value:item.optionCode})
+               }
+          })
         }
     },
     mounted() {
 
         this.initActiveData(this.activeData);
+        if(this.activeData.__config__.selectArrType){ // 显示前多语言化
+              this.activeData.__slot__.options=[]
+              console.log(this.optionDataArr)
+              this.optionDataArr.forEach((li)=>{
+                    if(li.optionType === this.activeData.__config__.selectArrType){
+                      this.activeData.__slot__.options.push({label:li.optionName,value:li.optionCode})
+                    }
+              })
+            }
         if(this.activeData.__config__.regList.length>0){// 如果之前选择了验证规则  再次切换回来进行回写
         this.activeData.__config__.regList.forEach((item)=>{
            this.regularChoise.forEach((li)=>{
