@@ -63,6 +63,7 @@
         >
           复制代码
                 </el-button>-->
+        <slot name="upload" style="margin-left: -20px"></slot>
         <slot name="submit" style="margin-left: -20px"></slot>
       </div>
       <el-scrollbar class="center-scrollbar">
