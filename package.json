@@ -1,6 +1,6 @@
 {
   "name": "fbc-form-design",
-  "version": "0.0.45",
+  "version": "0.0.49",
   "private": false,
   "main": "dist/FmsForm.common.js",
   "scripts": {

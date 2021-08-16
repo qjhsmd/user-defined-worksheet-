@@ -54,7 +54,25 @@ export default {
       nativeOn: {}
     }
     const confClone = JSON.parse(JSON.stringify(this.conf))
-    const children = []
+    if (confClone.type === "date" && confClone.rangeDate) {
+      var Expression=/^[0-9]*[1-9][0-9]*$/;
+      var objExp = new RegExp(Expression);
+      if(objExp.test(confClone.rangeDate)){
+        confClone["picker-options"] = {
+          disabledDate: function disabledDate (time) {
+            const dateTime = new Date();
+            const startTime = dateTime.setDate(dateTime.getDate() - 1);
+            const endTime = new Date((new Date()).getTime() + (confClone.rangeDate-1) * 24 * 3600 * 1000);
+            return time.getTime() < new Date(startTime).getTime() || time.getTime() > new Date(endTime).getTime();
+          }
+        }
+      } else {
+        confClone.rangeDate = ''
+      }
+    } else if (confClone.__config__.tag === "el-date-picker") {
+      confClone.rangeDate = ''
+    }
+    const children = [];
 
     const childObjs = componentChild[confClone.__config__.tag]
     if (childObjs) {
@@ -99,6 +117,7 @@ export default {
     })
     delete dataObject.attrs.__config__
     delete dataObject.attrs.__slot__
+    delete dataObject.attrs.rangeDate
     return h(this.conf.__config__.tag, dataObject, children)
   },
   props: ['conf']
