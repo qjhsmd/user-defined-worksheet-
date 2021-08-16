@@ -122,6 +122,8 @@ module.exports =  {
     UserDefinedRules:'自定义校验规则',
     applier:'申请人',
     ApplicationDepartment:'申请部门',
+    ApplicationUserId:'申请人ID',
+    ApplicationDepID:'申请部门ID',
     currentDate:'当前日期',
     InputTypeComponents:'输入型组件',
     OptionalComponents:'选择型组件',
@@ -160,6 +162,8 @@ module.exports =  {
     mobileEventResponse:'移动事件响应',
     fieldQuery:'字段查询',
     fieldShow:'字段展示',
+    rangeDate:'可选天数',
+    templateDate:'请输入当天开始往后可选的天数',
   },
   FormDrawer:{
     ResourceReference:'资源引用',

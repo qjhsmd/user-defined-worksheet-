@@ -120,6 +120,8 @@ module.exports =  {
     UserDefinedRules:'User defined verification rules',
     applier:'Applier',
     ApplicationDepartment:'Application department',
+    ApplicationUserId:'Applier ID',
+    ApplicationDepID:'Application department ID',
     currentDate:'Current date',
     InputTypeComponents:'Input type components',
     OptionalComponents:'Optional components',
@@ -161,6 +163,8 @@ module.exports =  {
     mobileEventResponse:'Mobile event response',
     fieldQuery:'Field query',
     fieldShow:'Field show',
+    rangeDate:'Optional Date',
+    templateDate:'Please enter an optional number of days from the start of the day',
   },
   CodeTypeDialog:{
     GenerationType:'Generation Type',

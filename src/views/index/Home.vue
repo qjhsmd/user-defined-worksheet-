@@ -48,10 +48,10 @@
         <!-- <el-button icon="el-icon-video-play" type="text" @click="run">
           预览
                 </el-button> -->
-
+        <!-- 查看Json数据
         <el-button icon="el-icon-view" type="text" @click="showJson">
           {{$t('RightPanel.lookJson')}}
-        </el-button>
+        </el-button> -->
         <!-- <el-button icon="el-icon-download" type="text" @click="download">
           导出vue文件
                 </el-button>-->
@@ -569,6 +569,7 @@ export default {
               format: "yyyy-MM-dd",
               "value-format": "yyyy-MM-dd",
               readonly: false,
+              rangeDate: '',
             },
             {
               __config__: {

@@ -897,6 +897,10 @@
                     <el-form-item v-if=" activeData.__config__.tagIcon === 'select' "  :label="$t('RightPanel.isReadonly')">
                         <el-switch v-model="activeData.disabled" />
                     </el-form-item>
+                    <el-form-item :label="$t('RightPanel.rangeDate')" v-if="activeData.type==='date'">
+                        <el-input v-model="activeData.rangeDate" @input="inputDate($event)"
+                            :placeholder="$t('RightPanel.templateDate')" />
+                    </el-form-item>
 
                     <!-- <template v-if="activeData.__config__.layout === 'colFormItem'">
             <el-divider>正则校验</el-divider>
@@ -1324,6 +1328,14 @@ export default {
             {
                 value: "default_apply_dept",
                 label: this.$t('RightPanel.ApplicationDepartment')
+            },
+            {
+                value: "default_apply_user_id",
+                label: this.$t('RightPanel.ApplicationUserId')
+            },
+            {
+                value: "default_apply_dept_id",
+                label: this.$t('RightPanel.ApplicationDepID')
             }]
         },
         regularChoise() {
@@ -2460,7 +2472,24 @@ export default {
                 saveFormConf(val);
             },
             deep: true
-        }
+        },
+        // activeData() {
+        //     if (this.activeData.fun) {
+        //         return this.activeData.fun.replace(/?:&lt;|&gt;/g, function() {
+        //             return {
+        //                 '&lt;': '<',
+        //                 '&gt;': '>',
+        //             }})
+        //     }
+        //     if (this.activeData.showfun) {
+        //         return this.activeData.showfun.replace(/?:&lt;|&gt;/g, function() {
+        //             return {
+        //                 '&lt;': '<',
+        //                 '&gt;': '>',
+        //             }})
+        //     }
+        //     console.log(this.activeData);
+        // }
     },
     methods: {
         initActiveData(val){
@@ -2498,28 +2527,28 @@ export default {
         },
         changeInputFun(e) {
             let con = e;
-            // this.activeData.result = con[1].replace(/(^\s*)|(\s*$)/g, "");
-            // function test(value,that,config){
-            //     that.formConfCopy.fields.forEach(el => {
-            //         if (el.__vModel__ === 'a') {
-            //             that.$set(el.__config__, 'defaultValue', that.DateDiff(value['m'][0],value['m'][1])); 
-            //             that.formData[config.result] = that.DateDiff(value['m'][0],value['m'][1])
-            //         }
-            //     });
-            // }
+            axios.get('http://10.31.52.137:8080/odc-rmis/business/employeeExternal/find',{
+                params:{
+                    employeeName:'外部员工测试',
+                    admissionDate: '1221'
+                }
+            }).then(res => {
+                alert(JSON.stringify(res.data));
+                console.log('查询数据成功！');
+            }).catch(error => {
+                console.log('查询数据失败！');
+            });
             this.activeData.fun = "function test(value,that,config){" + con.replace(/(^\s*)|(\s*$)/g, "") + "}"
+            console.log(this.activeData.fun);
         },
-        checkFieldModel(e) {
-            console.log(e)
-            // this.activeData.result = e
-        },
-        changeFieldFun(e) {
-            console.log(e)
-            console.log(this.activeData)
-            // if(e == 'click' && this.activeData.__config__.tagIcon == 'input') {
-            //     this.$message.error('input只能绑定oninput事件')
-            //     this.activeData.event = 'input'
-            // }
+        changeFieldFun(e) {},
+        checkFieldModel(e) {},
+        inputDate(val) {
+            var Expression=/^[0-9]*[1-9][0-9]*$/;
+            var objExp = new RegExp(Expression);
+            if(objExp.test(val)){
+                this.activeData.rangeDate = val;
+            }
         },
         //普通组件关联自定义码表后选择码表
         changeNormalCodeName(e) {
@@ -2774,13 +2803,14 @@ export default {
             this.$set(this.activeData.__config__, "defaultValue", val ? [] : "");
         },
         variableDateChange(val) {
-            this.activeData.type = 'date'
+            this.activeData.type = 'date';
             this.setTimeValue(dateTimeFormat['date'], 'date');
         },
         dateTypeChange(val) {
             if (this.activeData.variableDate !== '') {
                 this.activeData.variableDate = ''
             }
+            this.activeData.rangeDate = '';
             this.setTimeValue(dateTimeFormat[val], val);
         },
         rangeChange(val) {
@@ -2872,7 +2902,7 @@ export default {
                     }
               })
             }
-        if(this.activeData.__config__.regList.length>0){// 如果之前选择了验证规则  再次切换回来进行回写
+        if(this.activeData.__config__.regList && this.activeData.__config__.regList.length>0){// 如果之前选择了验证规则  再次切换回来进行回写
         this.activeData.__config__.regList.forEach((item)=>{
            this.regularChoise.forEach((li)=>{
                if(li.message == item.message){
