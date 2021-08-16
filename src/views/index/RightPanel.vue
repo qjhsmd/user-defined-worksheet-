@@ -1096,7 +1096,7 @@
 
 <script>
 import "../../icons";
-import { isArray } from "util";
+import { isArray, log } from "util";
 import draggable from "vuedraggable";
 import TreeNodeDialog from "@/views/index/TreeNodeDialog";
 import { isNumberStr } from "@/utils/index";
@@ -2473,23 +2473,6 @@ export default {
             },
             deep: true
         },
-        // activeData() {
-        //     if (this.activeData.fun) {
-        //         return this.activeData.fun.replace(/?:&lt;|&gt;/g, function() {
-        //             return {
-        //                 '&lt;': '<',
-        //                 '&gt;': '>',
-        //             }})
-        //     }
-        //     if (this.activeData.showfun) {
-        //         return this.activeData.showfun.replace(/?:&lt;|&gt;/g, function() {
-        //             return {
-        //                 '&lt;': '<',
-        //                 '&gt;': '>',
-        //             }})
-        //     }
-        //     console.log(this.activeData);
-        // }
     },
     methods: {
         initActiveData(val){
@@ -2539,7 +2522,6 @@ export default {
                 console.log('查询数据失败！');
             });
             this.activeData.fun = "function test(value,that,config){" + con.replace(/(^\s*)|(\s*$)/g, "") + "}"
-            console.log(this.activeData.fun);
         },
         changeFieldFun(e) {},
         checkFieldModel(e) {},
@@ -2675,7 +2657,6 @@ export default {
                     }
                 }
             }
-
         },
         clearReg(){ // 清空选择的正则表达式
                    this.regLabel = ''
@@ -2895,7 +2876,6 @@ export default {
         this.initActiveData(this.activeData);
         if(this.activeData.__config__.selectArrType){ // 显示前多语言化
               this.activeData.__slot__.options=[]
-              console.log(this.optionDataArr)
               this.optionDataArr.forEach((li)=>{
                     if(li.optionType === this.activeData.__config__.selectArrType){
                       this.activeData.__slot__.options.push({label:li.optionName,value:li.optionCode})
@@ -2904,14 +2884,22 @@ export default {
             }
         if(this.activeData.__config__.regList && this.activeData.__config__.regList.length>0){// 如果之前选择了验证规则  再次切换回来进行回写
         this.activeData.__config__.regList.forEach((item)=>{
-           this.regularChoise.forEach((li)=>{
-               if(li.message == item.message){
-                   this.customMsg = li.message
-                   this.regList = li.value
-                   this.customList =li.value
-                   this.regLabel = li.label
-               }
-        })
+            let validValue = false
+            this.regularChoise.forEach((li)=>{
+                if(li.message == item.message){
+                    validValue = true
+                    this.customMsg = li.message
+                    this.regList = li.value
+                    this.customList = li.value
+                    this.regLabel = li.label
+                }
+            })
+            if (!validValue) {
+                this.customMsg = item.message
+                this.regList = this.$t('RightPanel.UserDefinedRules')
+                this.customList = item.pattern
+                this.regLabel = this.$t('RightPanel.UserDefinedRules')
+            }
         })
         }
     }
