@@ -165,6 +165,8 @@ module.exports =  {
     fieldShow:'Field show',
     rangeDate:'Optional Date',
     templateDate:'Please enter an optional number of days from the start of the day',
+    selectTime:'Optional Time',
+    selectTimePh:'For example: 08:00:00-22:00:00',
   },
   CodeTypeDialog:{
     GenerationType:'Generation Type',

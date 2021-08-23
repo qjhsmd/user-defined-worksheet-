@@ -901,6 +901,10 @@
                         <el-input v-model="activeData.rangeDate" @input="inputDate($event)"
                             :placeholder="$t('RightPanel.templateDate')" />
                     </el-form-item>
+                    <el-form-item :label="$t('RightPanel.selectTime')" v-if="activeData['picker-options']">
+                        <el-input v-model="activeData['picker-options'].selectableRange" @input="inputTime($event)"
+                            :placeholder="$t('RightPanel.selectTimePh')" />
+                    </el-form-item>
 
                     <!-- <template v-if="activeData.__config__.layout === 'colFormItem'">
             <el-divider>正则校验</el-divider>
@@ -1232,8 +1236,7 @@ export default {
                     const config = data.__config__;
                     return data.componentName || `${config.label}: ${data.__vModel__}`;
                 }
-            }
-            // onlyDetail: []
+            },
         };
     },
     computed: {
@@ -2530,6 +2533,15 @@ export default {
             var objExp = new RegExp(Expression);
             if(objExp.test(val)){
                 this.activeData.rangeDate = val;
+            }
+        },
+        inputTime(val) {
+            var splitValue = val.split('-')
+            var reDateTime = /^(?:(?:[0-2][0-3])|(?:[0-1][0-9])):[0-5][0-9]$/;
+            if (splitValue.length > 1) {
+                if(reDateTime.test(splitValue[0] && splitValue[1])){
+                    this.activeData['picker-options'].selectableRange = val;
+                }
             }
         },
         //普通组件关联自定义码表后选择码表

@@ -164,6 +164,8 @@ module.exports =  {
     fieldShow:'字段展示',
     rangeDate:'可选天数',
     templateDate:'请输入当天开始往后可选的天数',
+    selectTime:'时间范围',
+    selectTimePh:'例如：08:00:00-22:00:00',
   },
   FormDrawer:{
     ResourceReference:'资源引用',
