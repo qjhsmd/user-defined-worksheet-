@@ -99,6 +99,7 @@ module.exports =  {
     ShowBreakpoints:'Show breakpoints',
     InputStatistics:'Input statistics',
     whetherRequired:'Whether Required',
+    whetherInput:'Whether Input',
     LayoutStructureTree:'Layout structure tree',
     FormSize:'Form size',
     medium:'Medium',

@@ -98,6 +98,7 @@ module.exports =  {
     ShowBreakpoints:'显示间断点',
     InputStatistics:'输入统计',
     whetherRequired:'是否必填',
+    whetherInput:'是否可输入',
     LayoutStructureTree:'布局结构树',
     FormSize:'表单尺寸',
     medium:'中等的',

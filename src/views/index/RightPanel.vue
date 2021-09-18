@@ -858,11 +858,12 @@
                         :label="$t('RightPanel.whetherMultiple')">
                         <el-switch v-model="activeData.multiple" @change="multipleChange" />
                     </el-form-item> -->
-                    <el-form-item v-if="
-              activeData.__config__.required !== undefined &&
-                !activeData.mandatory
-            " :label="$t('RightPanel.whetherRequired')">
+                    <el-form-item v-if="activeData.__config__.required !== undefined && !activeData.mandatory" 
+                        :label="$t('RightPanel.whetherRequired')">
                         <el-switch v-model="activeData.__config__.required" />
+                    </el-form-item>
+                    <el-form-item v-if="activeData.__config__.tagIcon==='Customcodetable'" :label="$t('RightPanel.whetherInput')">
+                        <el-switch v-model="activeData['allow-create']" />
                     </el-form-item>
 
                     <template v-if="activeData.__config__.layoutTree">
@@ -1942,7 +1943,8 @@ export default {
                     codeModel: '',//回显字段
                     codeType: '3',//查询方式
                     codeData: '',//请求参数
-                    codeTableId: ''
+                    codeTableId: '',
+                    "allow-create": false,                    
                 },
             ]
         },
@@ -2407,7 +2409,8 @@ export default {
                             codeModel: '',//回显字段
                             codeType: '3',//查询方式
                             codeData: '',//请求参数
-                            codeTableId: ''
+                            codeTableId: '',
+                            "allow-create": false,
                         },
                         {
                             __config__: {
