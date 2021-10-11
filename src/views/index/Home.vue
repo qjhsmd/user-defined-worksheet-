@@ -675,7 +675,6 @@ export default {
               codeType: "3", //查询方式
               codeData: "", //请求参数
               codeTableId: "",
-              "allow-create": false,
             },
             {
               __config__: {

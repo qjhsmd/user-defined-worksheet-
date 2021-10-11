@@ -862,8 +862,9 @@
                         :label="$t('RightPanel.whetherRequired')">
                         <el-switch v-model="activeData.__config__.required" />
                     </el-form-item>
-                    <el-form-item v-if="activeData.__config__.tagIcon==='Customcodetable'" :label="$t('RightPanel.whetherInput')">
-                        <el-switch v-model="activeData['allow-create']" />
+                    <el-form-item v-if="activeData.__config__.tagIcon === 'Customcodetable' && activeData.codeType === '6'" 
+                        :label="$t('RightPanel.whetherHidden')">
+                        <el-switch v-model="activeData.__config__.hidden" />
                     </el-form-item>
 
                     <template v-if="activeData.__config__.layoutTree">
@@ -1913,6 +1914,7 @@ export default {
                         labelWidth: null,
                         showLabel: true,
                         changeTag: true,
+                        hidden: false,
                         tag: 'el-input',
                         tagIcon: 'Customcodetable',
                         defaultValue: null,
@@ -1943,8 +1945,7 @@ export default {
                     codeModel: '',//回显字段
                     codeType: '3',//查询方式
                     codeData: '',//请求参数
-                    codeTableId: '',
-                    "allow-create": false,                    
+                    codeTableId: '',             
                 },
             ]
         },
@@ -2379,6 +2380,7 @@ export default {
                                 labelWidth: null,
                                 showLabel: true,
                                 changeTag: true,
+                                hidden: false,
                                 tag: 'el-input',
                                 tagIcon: 'Customcodetable',
                                 defaultValue: null,
@@ -2410,7 +2412,6 @@ export default {
                             codeType: '3',//查询方式
                             codeData: '',//请求参数
                             codeTableId: '',
-                            "allow-create": false,
                         },
                         {
                             __config__: {

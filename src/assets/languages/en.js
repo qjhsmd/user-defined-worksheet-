@@ -57,6 +57,7 @@ module.exports =  {
     type:'Type',
     selectTips:'Please select',
     whetherMultiple:'Whether multiple choice',
+    whetherHidden:'Whether hidden',
     TimeType:'Time type',
     TimeTypeTips:'Please select time type',
 
@@ -99,7 +100,6 @@ module.exports =  {
     ShowBreakpoints:'Show breakpoints',
     InputStatistics:'Input statistics',
     whetherRequired:'Whether Required',
-    whetherInput:'Whether Input',
     LayoutStructureTree:'Layout structure tree',
     FormSize:'Form size',
     medium:'Medium',
