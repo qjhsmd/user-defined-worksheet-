@@ -57,6 +57,7 @@ module.exports =  {
     type:'类型',
     selectTips:'请选择',
     whetherMultiple:'是否多选',
+    whetherHidden:'是否隐藏',
     TimeType:'时间类型',
     TimeTypeTips:'请选择时间类型',
     fieldName:'文件字段名',
@@ -164,6 +165,8 @@ module.exports =  {
     fieldShow:'字段展示',
     rangeDate:'可选天数',
     templateDate:'请输入当天开始往后可选的天数',
+    selectTime:'时间范围',
+    selectTimePh:'例如：08:00:00-22:00:00',
   },
   FormDrawer:{
     ResourceReference:'资源引用',

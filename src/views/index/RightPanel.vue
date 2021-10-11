@@ -858,11 +858,13 @@
                         :label="$t('RightPanel.whetherMultiple')">
                         <el-switch v-model="activeData.multiple" @change="multipleChange" />
                     </el-form-item> -->
-                    <el-form-item v-if="
-              activeData.__config__.required !== undefined &&
-                !activeData.mandatory
-            " :label="$t('RightPanel.whetherRequired')">
+                    <el-form-item v-if="activeData.__config__.required !== undefined && !activeData.mandatory" 
+                        :label="$t('RightPanel.whetherRequired')">
                         <el-switch v-model="activeData.__config__.required" />
+                    </el-form-item>
+                    <el-form-item v-if="activeData.__config__.tagIcon === 'Customcodetable' && activeData.codeType === '6'" 
+                        :label="$t('RightPanel.whetherHidden')">
+                        <el-switch v-model="activeData.__config__.hidden" />
                     </el-form-item>
 
                     <template v-if="activeData.__config__.layoutTree">
@@ -900,6 +902,10 @@
                     <el-form-item :label="$t('RightPanel.rangeDate')" v-if="activeData.type==='date'">
                         <el-input v-model="activeData.rangeDate" @input="inputDate($event)"
                             :placeholder="$t('RightPanel.templateDate')" />
+                    </el-form-item>
+                    <el-form-item :label="$t('RightPanel.selectTime')" v-if="activeData['picker-options']">
+                        <el-input v-model="activeData['picker-options'].selectableRange" @input="inputTime($event)"
+                            :placeholder="$t('RightPanel.selectTimePh')" />
                     </el-form-item>
 
                     <!-- <template v-if="activeData.__config__.layout === 'colFormItem'">
@@ -1232,8 +1238,7 @@ export default {
                     const config = data.__config__;
                     return data.componentName || `${config.label}: ${data.__vModel__}`;
                 }
-            }
-            // onlyDetail: []
+            },
         };
     },
     computed: {
@@ -1909,6 +1914,7 @@ export default {
                         labelWidth: null,
                         showLabel: true,
                         changeTag: true,
+                        hidden: false,
                         tag: 'el-input',
                         tagIcon: 'Customcodetable',
                         defaultValue: null,
@@ -1939,7 +1945,7 @@ export default {
                     codeModel: '',//回显字段
                     codeType: '3',//查询方式
                     codeData: '',//请求参数
-                    codeTableId: ''
+                    codeTableId: '',             
                 },
             ]
         },
@@ -2374,6 +2380,7 @@ export default {
                                 labelWidth: null,
                                 showLabel: true,
                                 changeTag: true,
+                                hidden: false,
                                 tag: 'el-input',
                                 tagIcon: 'Customcodetable',
                                 defaultValue: null,
@@ -2404,7 +2411,7 @@ export default {
                             codeModel: '',//回显字段
                             codeType: '3',//查询方式
                             codeData: '',//请求参数
-                            codeTableId: ''
+                            codeTableId: '',
                         },
                         {
                             __config__: {
@@ -2530,6 +2537,15 @@ export default {
             var objExp = new RegExp(Expression);
             if(objExp.test(val)){
                 this.activeData.rangeDate = val;
+            }
+        },
+        inputTime(val) {
+            var splitValue = val.split('-')
+            var reDateTime = /^(?:(?:[0-2][0-3])|(?:[0-1][0-9])):[0-5][0-9]$/;
+            if (splitValue.length > 1) {
+                if(reDateTime.test(splitValue[0] && splitValue[1])){
+                    this.activeData['picker-options'].selectableRange = val;
+                }
             }
         },
         //普通组件关联自定义码表后选择码表
