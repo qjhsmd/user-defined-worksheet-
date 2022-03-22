@@ -251,7 +251,7 @@
                     <el-form-item v-if="
             (activeData.tableType === 'subTable' || activeData.tableType === 'detailTable') &&
             activeData.__vModel__ !== undefined &&
-            activeData.__config__.tagIcon == 'input'
+            (activeData.__config__.tagIcon == 'input' || activeData.__config__.tagIcon == 'textarea')
             " :label="$t('RightPanel.VerificationRules')">
                         <el-select v-model="regList" clearable @clear="clearReg" :placeholder="$t('RightPanel.VerificationRulestip')"
                             :style="{ width: '100%' }" @change="addReg">
@@ -262,7 +262,7 @@
                     <el-form-item v-if="
             (activeData.tableType === 'subTable' || activeData.tableType === 'detailTable') &&
             activeData.__vModel__ !== undefined &&
-            activeData.__config__.tagIcon == 'input'
+            (activeData.__config__.tagIcon == 'input' || activeData.__config__.tagIcon == 'textarea')
             " :label="$t('RightPanel.regularExpression')">
                         <el-input :readonly="regLabel === $t('RightPanel.UserDefinedRules') ? false:true"
                             @input="customReg" v-model="customList" />
@@ -270,7 +270,7 @@
                     <el-form-item v-if="
             (activeData.tableType === 'subTable' || activeData.tableType === 'detailTable') &&
             activeData.__vModel__ !== undefined &&
-            activeData.__config__.tagIcon == 'input'
+            (activeData.__config__.tagIcon == 'input' || activeData.__config__.tagIcon == 'textarea')
             " :label="$t('RightPanel.VerificationTips')">
                         <el-input :readonly="regLabel === $t('RightPanel.UserDefinedRules')? false:true"
                             @input="customRegMsg" v-model="customMsg" />
