@@ -249,7 +249,7 @@
                     </el-form-item>
                     <!-- 正则表达式 -->
                     <el-form-item v-if="
-            activeData.tableType === 'subTable' &&
+            (activeData.tableType === 'subTable' || activeData.tableType === 'detailTable') &&
             activeData.__vModel__ !== undefined &&
             activeData.__config__.tagIcon == 'input'
             " :label="$t('RightPanel.VerificationRules')">
@@ -260,7 +260,7 @@
                         </el-select>
                     </el-form-item>
                     <el-form-item v-if="
-            activeData.tableType === 'subTable' &&
+            (activeData.tableType === 'subTable' || activeData.tableType === 'detailTable') &&
             activeData.__vModel__ !== undefined &&
             activeData.__config__.tagIcon == 'input'
             " :label="$t('RightPanel.regularExpression')">
@@ -268,7 +268,7 @@
                             @input="customReg" v-model="customList" />
                     </el-form-item>
                     <el-form-item v-if="
-            activeData.tableType === 'subTable' &&
+            (activeData.tableType === 'subTable' || activeData.tableType === 'detailTable') &&
             activeData.__vModel__ !== undefined &&
             activeData.__config__.tagIcon == 'input'
             " :label="$t('RightPanel.VerificationTips')">
